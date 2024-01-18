@@ -1,0 +1,22 @@
+
+[
+    {
+      "title": "Farois",
+      "description": "Restauração completa dos farois",
+      "services": ["Limpeza", "Lixamento", "Aplicação do Composto Polidor", "Aplicação do Selante UV"],
+      "prices": {
+        "domicilio": 1200,
+        "bomdoza": 1000
+      }
+    },
+    {
+      "title": "Superfícies Plásticas",
+      "description": "Restauração completa das superfíces plásticas",
+      "services": ["Limpeza", "Aplicação do Composto Restaurador", "Condicionamento"],
+      "prices": {
+        "domicilio": 1700,
+        "bomdoza": 1500
+      }
+    }
+  ]
+  

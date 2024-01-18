@@ -1,0 +1,22 @@
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 3px;
+  color: #fff;
+  padding-top: 8px;
+  z-index: 10;
+}
+
+.slick-dots li button:before {
+  color: #fff;
+  border-radius: 9999px;
+}
+
+.slick-dots li.slick-active button:before{
+  color: #fff;
+}
+
+
