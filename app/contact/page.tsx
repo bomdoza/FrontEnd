@@ -13,9 +13,7 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   return (
     <>
-      <div className="mt-10 sm:py-12 md:py-14 lg:py-16">  
       <Contact />
-      </div>
     </>
   );
 };
