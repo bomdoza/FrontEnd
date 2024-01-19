@@ -39,15 +39,13 @@ const Contact = () => {
               <List text="Endereço: palmarejo, Praia" />
               <List text="Swag: 5 99 99 99" />
               <List text="Play: 955 55 55" />
-              <List text="Bomdoza@gmail.com" />
-              
-
+              <List text="Bomdoza@gmail.com" />             
           </div>
+
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
 
-            
-
           </div>
+          
         </div>
       </div>
     </section>

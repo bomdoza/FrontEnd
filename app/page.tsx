@@ -5,6 +5,7 @@ import HomeSlider from "@/components/HomeSlider";
 import Gallery from './galeria/page';
 import { Metadata } from "next";
 import About from "./about/page";
+import AboutSectionThree from "@/components/About/AboutSectionThree";
 
 export const metadata: Metadata = {
   title: "BOM DOZA",
@@ -17,6 +18,7 @@ export default function Home() {
     <>
       <HomeSlider />
       <ScrollUp />
+      <AboutSectionThree />
       <Features />
       <About />
       <Gallery />
