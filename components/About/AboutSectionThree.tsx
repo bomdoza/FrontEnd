@@ -59,6 +59,7 @@ function AboutSectionThree() {
                         src="/images/servicos/pecas/man-polish-car-garage.jpg"
                         alt='bomdoza'
                         fill={true}
+                        className="rounded-md"
                     />         
                 </div>
             </div>
