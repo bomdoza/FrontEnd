@@ -7,31 +7,52 @@ const menuData: Menu[] = [
     path: "/",
     newTab: false,
   },
-  {
-    id: 55,
-    title: "Serviços",
-    path: "/#features",
-    newTab: false,
-  },
+
   {
     id: 2,
-    title: "Sobre",
+    title: "Serviços",
+    newTab: false,
+    submenu: [
+      {
+        id: 41,
+        title: "Lavagem de Carros",
+        path: "#/CarWash",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: "Lavagem de Imóveis",
+        path: "#/PropertyCleaning",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: "Lavagem de Tanques",
+        path: "#/Tank Washing",
+        newTab: false,
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    title: "Sobre-nós",
     path: "/#about",
     newTab: false,
   },
   {
-    id: 9,
-    title: "Galeria",
-    path: "/#gallery",
+    id: 4,
+    title: "Blog",
+    path: "/blog",
     newTab: false,
   },
   {
-    id: 3,
+    id: 5,
     title: "Contacto",
     path: "/#contact",
     newTab: false,
-  }/*,
-  
+  },
+  /*
   {
     id: 4,
     title: "Pages",
@@ -85,7 +106,7 @@ const menuData: Menu[] = [
         path: "/error",
         newTab: false,
       },
-    ],   
-  },  */
+    ],
+  },*/
 ];
 export default menuData;

@@ -5,40 +5,40 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Miguel",
+    designation: "Taxista",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      "A Bom Dosa superou minhas expectativas na limpeza do meu carro. A atenção aos detalhes e a qualidade dos produtos deixaram meu carro impecável. Recomendo!",
+    image: "/images/user/userDefault.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Beatriz",
+    designation: "Dona de casa",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "A Bom Dosa fez um trabalho incrível na limpeza dos meus tapetes. A equipe foi eficiente cuidadosa e trouxe uma nova vida aos meus tapetes. Estou muito satisfeito!",
+    image: "/images/user/userDefault.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Matheus",
+    designation: "Empresário",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "A Bom Dosa foi a escolha certa para a limpeza dos tanques na minha empresa. Demonstraram conhecimento especializado, segurança e eficiência. Recomendo!",
+    image: "/images/user/userDefault.png",
     star: 5,
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="relative z-10 bg-gray-light py-16 dark:bg-bg-color-dark md:py-14 lg:py-20">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="O que os nossos clientes dizem"
+          paragraph="A satisfação dos nossos clientes é o melhor testemunho da nossa dedicação à excelência"
           center
         />
 
