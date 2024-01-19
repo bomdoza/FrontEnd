@@ -5,6 +5,8 @@ import HomeSlider from "@/components/HomeSlider";
 import Gallery from './galeria/page';
 import { Metadata } from "next";
 import About from "./about/page";
+import SessionCardAbout from "@/components/SessionCardAbout/AboutSectionOne";
+import Testimonial from "@/components/Testimonials/index";
 
 export const metadata: Metadata = {
   title: "BOM DOZA",
@@ -16,12 +18,11 @@ export default function Home() {
   return (
     <>
       <HomeSlider />
-      <ScrollUp />
-      <Features />
-      <About />
-      <Gallery />
-      <Contact />
+      <SessionCardAbout />
 
+
+      <Gallery />
+      <Testimonial/>
     </>
   );
 }

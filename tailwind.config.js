@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "1rem",
+      padding: "1.5rem",
     },
 
     screens: {
@@ -31,6 +31,7 @@ module.exports = {
       "2xl": "1400px",
       // => @media (min-width: 1400px) { ... }
     },
+   
     extend: {
       colors: {
         current: "currentColor",

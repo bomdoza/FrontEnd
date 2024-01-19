@@ -25,7 +25,7 @@ const GalleryPage = () => {
   return (
     <>
 
-      <div className="mt-10 pt-10 md:pt-16 lg:pt-24">
+      <div className="mt-4 md:pt-4 lg:pt-6">
 
       <SectionTitle
             title="Nossa Galeria"
