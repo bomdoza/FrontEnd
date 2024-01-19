@@ -44,15 +44,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="/#features"
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
-                    >
-                      Serviços
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/#about"
+                      href="/about"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Sobre Nós
@@ -60,10 +52,18 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="/#gallery"
+                      href="/blog"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Galeria
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/contact"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      Contacte-nos
                     </a>
                   </li>
                 </ul>
@@ -175,7 +175,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Todos os direitos reservados a Bom Doza e alimentada pela CV Innovation
+            Copyright ©2024 CV Innovation All Right Reserve
             </p>
           </div>
         </div>

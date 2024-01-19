@@ -4,15 +4,8 @@ import SectionTitle from "@/components/Common/SectionTitle";
 const Contact = () => {
 
   return (
-    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
+    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-16">
       <div className="container">
-
-      <SectionTitle
-        title="Contactos"
-        paragraph=""
-        center
-        mb="35px"
-      />
         <div className="-mx-4 flex flex-wrap">
 
         <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
@@ -29,7 +22,7 @@ const Contact = () => {
                 Precisas de ajuda? Nos envie uma mensagem
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-              Nossa equipe de suporte entrará em contato com si o mais rápido possível via e-mail.
+                Nossa equipe de suporte entrará em contacto com si o mais rápido possível via e-mail.
               </p>
               <form>
                 <div className="-mx-4 flex flex-wrap">
