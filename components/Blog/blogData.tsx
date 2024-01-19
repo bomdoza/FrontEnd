@@ -3,45 +3,47 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title:
+      "Descubra a Nova Era da Limpeza com a Bom Dosa e seus Serviços Inovadores",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-01.jpg",
+      "Bem-vindo à revolução da limpeza com a Bom Dosa! Estamos orgulhosos de apresentar a você a próxima era em serviços de limpeza, onde a inovação e a excelência se encontram para transformar o comum em impecável.",
+    image: "/images/blog/post1.png",
     author: {
-      name: "Samuyl Joshi",
-      image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      name: "Bom Dosa",
+      image: "/images/favicon.png",
+      designation: "Administrador",
     },
-    tags: ["creative"],
-    publishDate: "2025",
+    tags: ["Novidade"],
+    publishDate: "2024",
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "Por Que Escolher Bom Dosa para suas Necessidades de Limpeza?",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-02.jpg",
+      "Bem-vindo à revolução da limpeza com a Bom Dosa! Estamos orgulhosos de apresentar a você a próxima era em serviços de limpeza, onde a inovação e a excelência se encontram para transformar o comum em impecável.",
+    image: "/images/blog/post2.png",
     author: {
-      name: "Musharof Chy",
-      image: "/images/blog/author-02.png",
-      designation: "Content Writer",
+      name: "Bom Dosa",
+      image: "/images/favicon.png",
+      designation: "Administrador",
     },
-    tags: ["computer"],
+    tags: ["Curiosidade"],
     publishDate: "2025",
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title:
+      "Adesivo Bom Dosa no Carro: Limpeza com Desconto para Nossos Apoiadores",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-03.jpg",
+      "Na vasta paisagem de serviços de limpeza, a Bom Dosa destaca-se como a escolha óbvia para quem busca excelência, qualidade e comprometimento. Descubra as razões convincentes pelas quais somos a principal escolha para atender às suas necessidades de limpeza.",
+    image: "/images/blog/post3.png",
     author: {
-      name: "Lethium Deo",
-      image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      name: "Bom Dosa",
+      image: "/images/favicon.png",
+      designation: "Administrador",
     },
-    tags: ["design"],
-    publishDate: "2025",
+    tags: ["Desconto"],
+    publishDate: "2024",
   },
 ];
 export default blogData;
