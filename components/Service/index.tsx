@@ -12,7 +12,7 @@ const Index = () => {
        <div className="container">
          <SectionTitle
            title="Nossos serviços"
-           paragraph="Na Bom Dosa, oferecemos uma gama abrangente de serviços especializados"
+           paragraph="Na Bom Doza, oferecemos uma gama abrangente de serviços especializados"
            center
          />
          <div className="grid grid-cols-1 gap-x-4 gap-y-20 pt-14 md:pt-6 lg:grid-cols-2 lg:gap-y-16 lg:pt-0  xl:grid-cols-3">

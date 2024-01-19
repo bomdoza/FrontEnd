@@ -8,7 +8,7 @@ const testimonialData: Testimonial[] = [
     name: "Miguel",
     designation: "Taxista",
     content:
-      "A Bom Dosa superou minhas expectativas na limpeza do meu carro. A atenção aos detalhes e a qualidade dos produtos deixaram meu carro impecável. Recomendo!",
+      "A Bom Doza superou minhas expectativas na limpeza do meu carro. A atenção aos detalhes e a qualidade dos produtos deixaram meu carro impecável. Recomendo!",
     image: "/images/user/userDefault.png",
     star: 5,
   },
@@ -17,7 +17,7 @@ const testimonialData: Testimonial[] = [
     name: "Beatriz",
     designation: "Dona de casa",
     content:
-      "A Bom Dosa fez um trabalho incrível na limpeza dos meus tapetes. A equipe foi eficiente cuidadosa e trouxe uma nova vida aos meus tapetes. Estou muito satisfeito!",
+      "A Bom Doza fez um trabalho incrível na limpeza dos meus tapetes. A equipe foi eficiente cuidaDoza e trouxe uma nova vida aos meus tapetes. Estou muito satisfeito!",
     image: "/images/user/userDefault.png",
     star: 5,
   },
@@ -26,7 +26,7 @@ const testimonialData: Testimonial[] = [
     name: "Matheus",
     designation: "Empresário",
     content:
-      "A Bom Dosa foi a escolha certa para a limpeza dos tanques na minha empresa. Demonstraram conhecimento especializado, segurança e eficiência. Recomendo!",
+      "A Bom Doza foi a escolha certa para a limpeza dos tanques na minha empresa. Demonstraram conhecimento especializado, segurança e eficiência. Recomendo!",
     image: "/images/user/userDefault.png",
     star: 5,
   },

@@ -37,7 +37,7 @@ function AboutSectionThree() {
                 />
                 <DivTitle 
                 title=''
-                paragraph='É hora de elevar o padrão de limpeza dos seus pertences! Na BomDoza, 
+                paragraph='É hora de elevar o padrão de limpeza dos seus pertences! Na Bom Doza, 
                 dedicamos nossa expertise em transformar o comum em impecável. Seja o seu carro, sofá, 
                 tapete ou qualquer outro item, nossa equipe especializada está pronta para proporcionar uma limpeza excepcional.'
                 mb='50px'
