@@ -21,8 +21,8 @@ const menuData: Menu[] = [
       },
       {
         id: 42,
-        title: "Lavagem de Imóveis",
-        path: "#/PropertyCleaning",
+        title: "Lavagem de Mobília",
+        path: "#/FurnitureCleaning",
         newTab: false,
       },
       {

@@ -5,8 +5,8 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden  pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] h-[550px] sm:h-[500px] md:h-[560px] xl:h-[650px] 2xl:pb-[200px] 2xl:pt-[210px] bg-cover bg-center"       
-        style={{ backgroundImage: 'url("images/hero/background/fundo.png")' }}
+        className="relative z-10 h-[550px]  overflow-hidden bg-cover bg-center pb-16 pt-[120px] sm:h-[500px] md:h-[560px] md:pb-[120px] md:pt-[150px] xl:h-[650px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        style={{ backgroundImage: 'url("images/hero/background/cleaner.png")' }}
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -15,34 +15,30 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-
-                <p className="dark:text-white mb-2 text-base !leading-relaxed text-body-color sm:text-xs md:text-xl">
-                  O melhor serviço de lavagem de carros                 
+                <p className="mb-2 text-base !leading-relaxed text-body-color dark:text-white sm:text-xs md:text-xl">
+                  O melhor serviço de lavagem de carros
                 </p>
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-5xl md:leading-tight">
                   Lavagem profissional completa.
                 </h1>
-                <p className="dark:text-white mb-12 text-base !leading-relaxed text-body-color sm:text-xs md:text-xl"> 
-                  Somos uma empresa especializada em proporcionar serviços de lavagem automotiva de alta qualidade e eficiência.                
+                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-white sm:text-xs md:text-xl">
+                  Somos uma empresa especializada em proporcionar serviços de
+                  lavagem automotiva de alta qualidade e eficiência.
                 </p>
 
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-
-                <Link
+                  <Link
                     href="/#contact"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     Contacte-nos
-                </Link>
-                
+                  </Link>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
 
-        
         <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="364"
