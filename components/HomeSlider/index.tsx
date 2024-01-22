@@ -28,14 +28,14 @@ const HomeSlider = () => {
         <Hero />
         <Hero1 />
       </Slider>
-      <div className="absolute left-1/2 top-1/2 mt-8 -translate-x-1/2 -translate-y-1/2 transform text-center text-white">
-        <p className="mb-1 text-base !leading-relaxed text-body-color dark:text-white sm:text-xs md:text-xl">
-          O melhor serviço de lavagem de carros
+      <div className="absolute mt-5 px-3 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center text-white  w-full ">
+        <p className="mb-2 text-base !leading-relaxed text-body-color dark:text-white sm:text-xs md:text-xl">
+          O melhor serviço de lavagem
         </p>
-        <h1 className="mb-2 text-3xl font-bold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-5xl md:leading-tight">
+        <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-5xl md:leading-tight">
           Lavagem profissional completa.
         </h1>
-        <p className="mb-5 text-base !leading-relaxed text-body-color dark:text-white sm:text-xs md:text-xl">
+        <p className="mb-10 text-base !leading-relaxed text-body-color dark:text-white sm:text-xs md:text-xl">
           Somos uma empresa especializada em proporcionar serviços de lavagem
           automotiva de alta qualidade e eficiência.
         </p>
