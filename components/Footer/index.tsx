@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-20 lg:pt-20"
+        className="wow fadeInUp relative z-10 bg-white pt-16 text-center dark:bg-gray-dark md:pt-20 lg:pt-20 lg:text-start"
         data-wow-delay=".1s"
       >
         <div className="container">
@@ -29,10 +29,10 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
-                <p className="dark:text-body-color-dark mb-4 text-base leading-relaxed text-body-color">
-                  Transformando o comum em impecável, cuidando de carros, sofás, tapetes e mais com excelência!
+                <p className="mb-4 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                  Transformando o comum em impecável, cuidando de carros, sofás,
+                  tapetes e mais com excelência!
                 </p>
-                
               </div>
             </div>
 
@@ -45,7 +45,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/about"
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Sobre Nós
                     </a>
@@ -53,7 +53,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/blog"
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Blog
                     </a>
@@ -61,7 +61,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/contact"
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Contacte-nos
                     </a>
@@ -79,7 +79,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/contact"
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Código de Conduta
                     </a>
@@ -87,7 +87,7 @@ const Footer = () => {
                   <li>
                     <a
                       href=""
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Termos de Serviços
                     </a>
@@ -95,7 +95,7 @@ const Footer = () => {
                   <li>
                     <a
                       href=""
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Código de Conduta
                     </a>
@@ -107,13 +107,13 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Redes Sociais 
+                  Redes Sociais
                 </h2>
-                <div className="flex items-center">
+                <div className="mx-auto flex items-center lg:justify-normal justify-center">
                   <a
                     href=""
                     aria-label="social-link"
-                    className="dark:text-body-color-dark mr-6 text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
                       width="9"
@@ -127,7 +127,7 @@ const Footer = () => {
                   <a
                     href=""
                     aria-label="social-link"
-                    className="dark:text-body-color-dark mr-6 text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
                       width="19"
@@ -141,7 +141,7 @@ const Footer = () => {
                   <a
                     href=""
                     aria-label="social-link"
-                    className="dark:text-body-color-dark mr-6 text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
                       width="18"
@@ -155,7 +155,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="dark:text-body-color-dark text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
                       width="17"
@@ -169,18 +169,15 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-            Copyright ©2024 CV Innovation All Right Reserve
+              Copyright ©2024 CV Innovation All Right Reserve
             </p>
           </div>
         </div>
-
-          
       </footer>
     </>
   );

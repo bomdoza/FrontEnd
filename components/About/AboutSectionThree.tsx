@@ -28,19 +28,19 @@ function AboutSectionThree() {
     <section className="pt-16 md:pt-20 lg:pt-24">
         <div className='container flex flex-wrap items-center'>
 
-            <div className='w-full px-4 lg:w-1/2'>
+            <div className='w-full lg:px-4 lg:w-1/2'>
 
                 <SectionTitle 
-                title='É hora de limpar seus pertences'
-                paragraph=''
-                mb='30px'
+                  title='É hora de limpar seus pertences'
+                  paragraph=''
+                  mb='30px'
                 />
                 <DivTitle 
-                title=''
-                paragraph='É hora de elevar o padrão de limpeza dos seus pertences! Na Bom Doza, 
-                dedicamos nossa expertise em transformar o comum em impecável. Seja o seu carro, sofá, 
-                tapete ou qualquer outro item, nossa equipe especializada está pronta para proporcionar uma limpeza excepcional.'
-                mb='50px'
+                  title=''
+                  paragraph='É hora de elevar o padrão de limpeza dos seus pertences! Na Bom Doza, 
+                  dedicamos nossa expertise em transformar o comum em impecável. Seja o seu carro, sofá, 
+                  tapete ou qualquer outro item, nossa equipe especializada está pronta para proporcionar uma limpeza excepcional.'
+                  mb='50px'
                 />
 
                 <div className="w-full px-4 lg:w-7/12 xl:w-8/12">

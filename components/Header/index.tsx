@@ -52,23 +52,23 @@ const Header = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12 h-20 max-h-full">
               <Link
                 href="/"
-                className={`header-logo block w-full h-20 ${
-                  sticky ? "py-5 lg:py-1" : "py-1"
+                className={`header-logo block w-100 h-20 ${
+                  sticky ? "py-0 lg:py-1" : "py-1"
                 } `}
               >
                 <Image
                   src="/images/logo/logos_lettering_blue-24.png"
                   alt="logo"
-                  width={140}
+                  width={80}
                   height={20}
-                  className="h-full w-auto dark:hidden"
+                  className="dark:hidden"
                 />
                 <Image
                   src="/images/logo/logos_lettering_blue-24.png"
                   alt="logo"
-                  width={140}
+                  width={80}
                   height={20}
-                  className="hidden h-full w-auto dark:block"
+                  className="hidden  dark:block"
                 />
               </Link>
             </div>
