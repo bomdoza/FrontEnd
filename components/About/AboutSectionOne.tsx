@@ -7,7 +7,7 @@ const AboutSectionOne = () => {
   return (
     <section id="about">
       <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+        <div className="border-b border-body-color/[.15] dark:border-white/[.15] py-12 md:py-14 lg:py-16">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <DivTitle
@@ -31,16 +31,18 @@ const AboutSectionOne = () => {
                 data-wow-delay=".2s"
               >
                 <Image
-                  src="/images/about/about-image.svg"
+                  src="/images/servicos/tapetes/limpador-a-vapor.jpg"
                   alt="about-image"
-                  fill
-                  className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
+                  layout="fill"
+                  objectFit="cover"
+                  className=" rounded-mddrop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
                 />
                 <Image
-                  src="/images/about/about-image-dark.svg"
+                  src="/images/servicos/tapetes/limpador-a-vapor.jpg"
                   alt="about-image"
-                  fill
-                  className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-md drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
                 />
               </div>
             </div>

@@ -10,9 +10,9 @@ const Footer = () => {
         data-wow-delay=".1s"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="-mx-4 flex flex-wrap text-center lg:text-left">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-4 max-w-[360px] lg:mb-14">
+              <div className="mb-4 lg:mb-14">
                 <Link href="/" className="mb-2 inline-block">
                   <Image
                     src="/images/logo/logos_lettering_blue-24.png"
@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-3/12">
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Política de Privacidade
