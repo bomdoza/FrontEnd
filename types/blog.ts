@@ -4,6 +4,12 @@ type Author = {
   designation: string;
 };
 
+type TopicDes = {
+  title: string;
+  desc: string;
+  topic: string[];
+};
+
 export type Blog = {
   id: number;
   title: string;
@@ -12,4 +18,7 @@ export type Blog = {
   author: Author;
   tags: string[];
   publishDate: string;
+  concluding: string;
+  paragraph2: string[];
+  topicDes: TopicDes;
 };

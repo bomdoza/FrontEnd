@@ -24,6 +24,7 @@ const Blog = () => {
                   title: blog.title.slice(0, 45),
                   paragraph: blog.paragraph.slice(0, 124),
                 }}
+                link={`/blog-details/${blog.id}`}
               />
             </div>
           ))}

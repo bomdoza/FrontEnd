@@ -1,5 +1,5 @@
 "use client";
-
+import Head from "next/head";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -15,9 +15,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
-    
-      <head />
+    <html suppressHydrationWarning lang="pt">
+      <head>
+        <meta property="og:image" content="/images/blog/post1.png" />
+        <meta name="twitter:card" content="summary_large"></meta>
+        <meta property="og:description" content="Bom Doza serviço de limpeza" />
+        <link
+          rel="shortcut icon"
+          href="/favicon.ico"
+          type="img/png"
+        />
+        <title>Bom Doza</title>
+      </head>
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>

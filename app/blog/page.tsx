@@ -1,3 +1,6 @@
+import RelatedPost from "@/components/Blog/RelatedPost";
+import BlogSearch from "@/components/Blog/BlogSearch";
+import TagButton from "@/components/Blog/TagButton";
 import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
@@ -5,92 +8,70 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Page for Startup Nextjs Template",
-  // other metadata
+  title: "Bom Doza-Blog",
 };
 
-const Blog = () => {
+const BlogSidebarPage = () => {
+
+  const uniqueTags = Array.from(new Set(blogData.flatMap((blog) => blog.tags)));
+
   return (
     <>
       <Breadcrumb
-        pageName="Blog Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="Blog"
+        description="Revelando a Limpeza em Todos os Detalhes: Notícias Fresquinhas, Serviços Impecáveis!"
       />
-
-      <section className="pb-[120px] pt-[120px]">
+      <section className="mb-10 overflow-hidden pb-[120px] pt-[18px]">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap justify-center">
-            {blogData.map((blog) => (
-              <div
-                key={blog.id}
-                className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
-              >
-                <SingleBlog blog={blog} />
+          <div className="-mx-4 flex flex-wrap">
+            <div className="w-full px-4 lg:w-8/12">
+              <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-2">
+                {blogData.map((blog) => (
+                  <div key={blog.id} className="w-full">
+                    <SingleBlog
+                      blog={{
+                        ...blog,
+                        title: blog.title.slice(0, 45),
+                        paragraph: blog.paragraph.slice(0, 80),
+                      }}
+                      link={`/blog-details/${blog.id}`}
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
 
-          <div
-            className="wow fadeInUp -mx-4 flex flex-wrap"
-            data-wow-delay=".15s"
-          >
-            <div className="w-full px-4">
-              <ul className="flex items-center justify-center pt-8">
-                <li className="mx-1">
-                  <a
-                    href="#0"
-                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
-                  >
-                    Prev
-                  </a>
-                </li>
-                <li className="mx-1">
-                  <a
-                    href="#0"
-                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
-                  >
-                    1
-                  </a>
-                </li>
-                <li className="mx-1">
-                  <a
-                    href="#0"
-                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
-                  >
-                    2
-                  </a>
-                </li>
-                <li className="mx-1">
-                  <a
-                    href="#0"
-                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
-                  >
-                    3
-                  </a>
-                </li>
-                <li className="mx-1">
-                  <span className="flex h-9 min-w-[36px] cursor-not-allowed items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color">
-                    ...
-                  </span>
-                </li>
-                <li className="mx-1">
-                  <a
-                    href="#0"
-                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
-                  >
-                    12
-                  </a>
-                </li>
-                <li className="mx-1">
-                  <a
-                    href="#0"
-                    className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
-                  >
-                    Next
-                  </a>
-                </li>
-              </ul>
+            <div className="w-full px-4 lg:w-4/12">
+              <BlogSearch />
+              <div className="mb-10 rounded-sm bg-white shadow-three dark:bg-gray-dark dark:shadow-none">
+                <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
+                  Últimas Notícias
+                </h3>
+                <ul className="p-8">
+                  {blogData.slice(0, 3).map((blog) => (
+                    <li
+                      className="mb-6 border-b border-body-color border-opacity-10 pb-6 
+                      dark:border-white dark:border-opacity-10"
+                      key={blog.id}
+                    >
+                      <RelatedPost
+                        {...blog}
+                        slug={`/blog-details/${blog.id}`}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mb-10 rounded-sm bg-white shadow-three dark:bg-gray-dark dark:shadow-none">
+                <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
+                  Tags Populares
+                </h3>
+                <div className="flex flex-wrap px-8 py-6">
+                  {uniqueTags.map((tag, index) => (
+                    <TagButton key={index} text={tag} />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -99,4 +80,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogSidebarPage;

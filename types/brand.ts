@@ -4,4 +4,6 @@ export type Brand = {
   href: string;
   image: string;
   imageLight?: string;
+  width: number;
+  height: number;
 };
