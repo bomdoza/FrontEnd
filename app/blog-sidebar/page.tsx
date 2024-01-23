@@ -334,7 +334,7 @@ const BlogSidebarPage = () => {
                         Share this post :
                       </h5>
                       <div className="flex items-center sm:justify-end">
-                        <SharePost />
+                        {/*<SharePost />*/}
                       </div>
                     </div>
                   </div>
@@ -342,12 +342,12 @@ const BlogSidebarPage = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-4/12">
-              <div className="shadow-three dark:bg-gray-dark mb-10 mt-12 rounded-sm bg-white p-6 dark:shadow-none lg:mt-0">
+              <div className="mb-10 mt-12 rounded-sm bg-white p-6 shadow-three dark:bg-gray-dark dark:shadow-none lg:mt-0">
                 <div className="flex items-center justify-between">
                   <input
                     type="text"
                     placeholder="Search here..."
-                    className="border-stroke dark:text-body-color-dark dark:shadow-two mr-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                    className="mr-4 w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                   />
                   <button
                     aria-label="search button"
@@ -368,7 +368,7 @@ const BlogSidebarPage = () => {
                   </button>
                 </div>
               </div>
-              <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
+              <div className="mb-10 rounded-sm bg-white shadow-three dark:bg-gray-dark dark:shadow-none">
                 <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                   Related Posts
                 </h3>
@@ -378,7 +378,7 @@ const BlogSidebarPage = () => {
                       title="Best way to boost your online sales."
                       image="/images/blog/post-01.jpg"
                       slug="#"
-                      date="12 Feb 2025"
+                      publishDate="12 Feb 2025"
                     />
                   </li>
                   <li className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10">
@@ -386,7 +386,7 @@ const BlogSidebarPage = () => {
                       title="50 Best web design tips & tricks that will help you."
                       image="/images/blog/post-02.jpg"
                       slug="#"
-                      date="15 Feb, 2024"
+                      publishDate="15 Feb, 2024"
                     />
                   </li>
                   <li>
@@ -394,12 +394,12 @@ const BlogSidebarPage = () => {
                       title="The 8 best landing page builders, reviewed"
                       image="/images/blog/post-03.jpg"
                       slug="#"
-                      date="05 Jun, 2024"
+                      publishDate="05 Jun, 2024"
                     />
                   </li>
                 </ul>
               </div>
-              <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
+              <div className="mb-10 rounded-sm bg-white shadow-three dark:bg-gray-dark dark:shadow-none">
                 <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                   Popular Category
                 </h3>
@@ -446,7 +446,7 @@ const BlogSidebarPage = () => {
                   </li>
                 </ul>
               </div>
-              <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
+              <div className="mb-10 rounded-sm bg-white shadow-three dark:bg-gray-dark dark:shadow-none">
                 <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                   Popular Tags
                 </h3>
