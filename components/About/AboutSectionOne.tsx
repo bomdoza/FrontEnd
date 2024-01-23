@@ -33,15 +33,13 @@ const AboutSectionOne = () => {
                 <Image
                   src="/images/servicos/tapetes/limpador-a-vapor.jpg"
                   alt="about-image"
-                  layout="fill"
-                  objectFit="cover"
+                  fill                
                   className=" rounded-mddrop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
                 />
                 <Image
                   src="/images/servicos/tapetes/limpador-a-vapor.jpg"
                   alt="about-image"
-                  layout="fill"
-                  objectFit="cover"
+                  fill
                   className="rounded-md drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
                 />
               </div>
