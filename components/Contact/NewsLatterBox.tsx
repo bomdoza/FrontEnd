@@ -59,10 +59,10 @@ const NewsLatterBox = () => {
 
   return (
     <div
-      className="wow fadeInUp relative mb-12 lg:h-full z-10 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+      className="wow fadeInUp relative mb-12 lg:h-full z-10 rounded-sm bg-white shadow-three dark:bg-gray-dark p-4 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
       data-wow-delay=".2s"
     >
-      <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
+      <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white ">
         Informações de Contacto
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
