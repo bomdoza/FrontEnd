@@ -1,6 +1,5 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import AboutFundators from "@/components/About/AboutFundators";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import ExcellenceSection from "@/components/About/ExcellenceSection";
 
@@ -22,7 +21,6 @@ const AboutPage = () => {
         modernos, garantimos resultados excepcionais em cada serviço."
         />
 
-      <AboutFundators />
       <ExcellenceSection />
       <AboutSectionOne />
       <AboutSectionTwo />
