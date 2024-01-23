@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+
+  const currentYear = new Date().getFullYear();
+  
   return (
     <>
       <footer
@@ -43,28 +46,28 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
+                    <Link
                       href="/about"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Sobre Nós
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/blog"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/contact"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Contacte-nos
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -77,28 +80,28 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
-                      href="/contact"
+                    <Link
+                      href="#"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Código de Conduta
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href=""
+                    <Link
+                      href="#"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Termos de Serviços
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href=""
+                    <Link
+                      href="#"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Código de Conduta
-                    </a>
+                      Código de Conduta
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -109,9 +112,9 @@ const Footer = () => {
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Redes Sociais
                 </h2>
-                <div className="mx-auto flex items-center lg:justify-normal justify-center">
+                <div className="mx-auto flex items-center justify-center lg:justify-normal">
                   <a
-                    href=""
+                    href="#"
                     aria-label="social-link"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
@@ -125,7 +128,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href=""
+                    href="#"
                     aria-label="social-link"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
@@ -139,7 +142,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href=""
+                    href="#"
                     aria-label="social-link"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
@@ -153,7 +156,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="#"
                     aria-label="social-link"
                     className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
@@ -174,7 +177,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Copyright ©2024 CV Innovation All Right Reserve
+              Copyright ©{currentYear} todos os direitos reservados a Bom Doza
             </p>
           </div>
         </div>

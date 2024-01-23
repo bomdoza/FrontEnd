@@ -11,7 +11,7 @@ const blogData: Service[] = [
     id: 2,
     name: "Lavagem de Mobília",
     href: "#/FurnitureCleaning",
-    image: "/images/service/Automotive.png",
+    image: "/images/service/sofa.png",
   },
   {
     id: 3,
