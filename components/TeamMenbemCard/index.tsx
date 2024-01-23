@@ -2,7 +2,7 @@ import React from 'react';
 
 const TeamMemberCard = ({ name, role, bio, profileImage }) => {
   return (
-    <div className="bg-black dark:bg-white p-6 rounded-lg shadow-md">
+    <div className="bg-white dark:bg-black p-6 rounded-lg shadow-md">
 
       <div className="mb-4">
         <img
@@ -12,9 +12,9 @@ const TeamMemberCard = ({ name, role, bio, profileImage }) => {
         />
       </div>
 
-      <h3 className="text-xl text-white dark:text-black font-bold mb-3">{name}</h3>
-      <p className="text-body-color mb-2">{role}</p>
-      <p className="text-body-color-dark ">{bio}</p>
+      <h3 className="text-xl text-black dark:text-white font-bold mb-3">{name}</h3>
+      <p className="text-body-color mb-3">{role}</p>
+      <p className="text-body-color-dark  text-justify">{bio}</p>
     </div>
   );
 };

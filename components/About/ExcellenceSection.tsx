@@ -1,12 +1,13 @@
-
 import React from 'react';
+import AboutData from "./AboutData";
+import Singlecomp from './SingleCompromise';
 
 const ExcellenceSection = () => {
   return (
-    <section className="py-10 md:py-14 lg:py-14 ">
+    <section className="py-16 sm:py-12 md:py-14 lg:py-14 mb-16 sm:mb-2">
         <div className="container mx-auto">
 
-            <h2 className="text-4xl font-bold mb-4 text-center">Compromisso com a Excelência desde o Início</h2>
+            <h2 className="text-2xl font-bold text-black dark:text-white sm:text-3xl mb-4 text-center">Compromisso com a Excelência desde o Início</h2>
 
             <p className='text-base text-justify !leading-relaxed text-body-color md:text-lg mb-8'>
             Na BomDoza, a busca incessante pela excelência é uma parte intrínseca de nossa identidade. 
@@ -14,44 +15,11 @@ const ExcellenceSection = () => {
             uma experiência de lavagem de carros e serviços de limpeza que transcende as expectativas convencionais.
             </p>
 
-            <div className="space-y-8">
-                <div>
-                    <h3 className="text-xl font-bold !leading-tight text-black dark:text-white sm:text-2xl md:text-[28px] mb-3">Qualidade Inabalável</h3>
-                    <p className='text-base text-justify !leading-relaxed text-body-color md:text-lg'>
-                    Desde o início, estabelecemos um padrão de qualidade intransigente em cada serviço que oferecemos.
-                    Cada detalhe, desde a escolha dos produtos até a execução das técnicas de lavagem,
-                    é meticulosamente planejado para garantir resultados excepcionais.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 className="text-xl font-bold !leading-tight text-black dark:text-white sm:text-2xl md:text-[28px] mb-3">Investimento em Treinamento</h3>
-                    <p className='text-base text-justify !leading-relaxed text-body-color md:text-lg'>
-                    Reconhecemos que uma equipe bem treinada é fundamental para entregar excelência.
-                    Investimos constantemente no treinamento e desenvolvimento de nossa equipe,
-                    capacitando-os com as habilidades necessárias para oferecer um serviço de alta qualidade.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 className="text-xl font-bold !leading-tight text-black dark:text-white sm:text-2xl md:text-[28px] mb-3">Inovação Contínua</h3>
-                    <p className='text-base text-justify !leading-relaxed text-body-color md:text-lg'>
-                    Abraçamos a inovação como um meio para manter nossa oferta atualizada e eficiente. 
-                    Ao adotar as mais recentes técnicas, tecnologias e produtos de limpeza, 
-                    garantimos que nossos serviços estejam sempre à frente das expectativas do setor.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 className="text-xl font-bold !leading-tight text-black dark:text-white sm:text-2xl md:text-[28px] mb-3">Feedback Iterativo</h3>
-                    <p className='text-base text-justify !leading-relaxed text-body-color md:text-lg'>
-                    Valorizamos as opiniões dos nossos clientes e as utilizamos como um guia constante para melhorias. 
-                    Através de feedbacks contínuos, ajustamos e refinamos nossos processos para garantir que cada experiência 
-                    de cliente seja mais impressionante do que a anterior.
-                    </p>
-                </div>
-
-            </div>
+            <div className="grid grid-cols-1 gap-x-10 gap-y-32 sm:gap-y-20 md:gap-y-28 lg:gap-y-20 md:grid-cols-2 lg:grid-cols-2">
+            {AboutData.map((feature) => (
+                <Singlecomp key={feature.id} comp={feature} />            
+            ))}
+          </div>
 
         </div>
     </section>

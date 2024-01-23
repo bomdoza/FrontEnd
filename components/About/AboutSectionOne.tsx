@@ -7,7 +7,7 @@ const AboutSectionOne = () => {
   return (
     <section id="about">
       <div className="container">
-        <div className="border-b border-body-color/[.15] dark:border-white/[.15] py-12 md:py-14 lg:py-16">
+        <div className="border-b border-body-color/[.15] dark:border-white/[.15] py-12 md:py-14 lg:py-114">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <DivTitle

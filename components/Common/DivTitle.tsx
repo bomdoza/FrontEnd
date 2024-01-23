@@ -20,7 +20,7 @@ const DivTitle = ({
           <h2 className="mb-4 text-xl font-bold !leading-tight text-black dark:text-white sm:text-2xl md:text-[28px]">
             {title}
           </h2>
-          <p className="text-base text-justify !leading-relaxed text-body-color md:text-lg">
+          <p className="text-base text-justify !leading-relaxed text-body-color md:text-xl lg:text-base xl:text-xl">
             {paragraph}
           </p>
         </div>

@@ -33,7 +33,7 @@ const AboutSectionTwo = () => {
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl md:text-[28px]">
                   Como Funciona?
                 </h3>
-                <p className="text-base text-justify font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                <p className="text-base text-justify font-medium leading-relaxed text-body-color md:text-xl lg:text-base xl:text-xl sm:leading-relaxed">
                   A BomDoza oferece uma gama de serviços de qualidade. 
                   Não se trata apenas de lavagem, é sobre restaurar, rejuvenescer e elevar a experiência 
                   de cuidado com seus pertences. Escolha a qualidade, escolha a dedicação, escolha a BomDoza 
@@ -45,7 +45,7 @@ const AboutSectionTwo = () => {
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl md:text-[28px]">
                   Equipe Especializada
                 </h3>
-                  <p className="text-base text-justify font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                  <p className="text-base text-justify font-medium leading-relaxed text-body-color md:text-xl lg:text-base xl:text-xl sm:leading-relaxed">
                     Contamos com uma equipe altamente qualificada e dedicada, apaixonada por oferecer soluções personalizadas 
                     para atender às necessidades específicas de cada cliente. Nossa equipe é treinada nas técnicas 
                     mais recentes de limpeza e está comprometida em garantir que cada item receba o tratamento que merece.

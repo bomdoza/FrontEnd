@@ -5,7 +5,7 @@ const TeamSection = () => {
   return (
     <section className=" py-12 md:py-14 lg:py-16 flex">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-8">Fundadores e Equipe Inicial</h2>
+        <h2 className="text-2xl font-bold text-black dark:text-white sm:text-3xl mb-8">Fundadores e Equipe Inicial</h2>
 
         <p className='mb-5 text-base text-justify lg:text-xl text-body-color-dark'>
           Na BomDoza, a paixão e o compromisso com o serviço excepcional começam com nossos fundadores e a equipe inicial. 
@@ -21,9 +21,9 @@ const TeamSection = () => {
           />
 
           <TeamMemberCard
-            name="Nome do Co-fundador"
+            name="Chris Moreira"
             role="Especialista em Limpeza Residencial"
-            bio="[Nome] é um especialista no cuidado de veículos. Com anos de experiência no setor, [Nome] lidera nossa equipe de serviços automotivos, garantindo que cada veículo receba a atenção e o carinho que merece."
+            bio="Chris é um especialista no cuidado de veículos. Com anos de experiência no setor, [Nome] lidera nossa equipe de serviços automotivos, garantindo que cada veículo receba a atenção e o carinho que merece."
             profileImage="/images/user/userDefault.png" 
           />
 
