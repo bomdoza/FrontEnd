@@ -24,8 +24,8 @@ const featuresData: Feature[] = [
     title: "Qualidade Inabalável",
     paragraph:
       "Desde o início, estabelecemos um padrão de qualidade intransigente em cada serviço que oferecemos. Cada detalhe, desde a escolha dos produtos até a execução das técnicas de lavagem, é meticulosamente planejado para garantir resultados excepcionais.",
-      imgfundo: "",
-      price: "",
+      imgfundo: "/images/servicos/tanques/tanque.jpg",
+      price: "100$",
   },
   {
     id: 2,
