@@ -7,9 +7,7 @@ import ExcellenceSection from "@/components/About/ExcellenceSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BOMDOZA",
-  description: "BOMDOZA cleaning service",
-  // other metadata
+  title: "Bom Doza-Sobre-nós",
 };
 
 const AboutPage = () => {

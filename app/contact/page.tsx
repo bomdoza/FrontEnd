@@ -4,9 +4,7 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BOMDOZA Contacto",
-  description: "BOMDOZA cleaning service",
-  // other metadata
+  title: "Bom Doza-Contacto",
 };
 
 const ContactPage = () => {
