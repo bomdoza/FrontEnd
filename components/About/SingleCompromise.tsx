@@ -1,11 +1,10 @@
 import { Feature } from "@/types/feature";
 
 const Singlecomp = ({ comp }: { comp: Feature }) => {
-  const { icon, title, paragraph, imgfundo } = comp;
+  const { icon, title, paragraph} = comp;
   return (
-    <div className="w-fullp-2 pt-4">
+    <div className="w-full p-2 pt-4">
       <div className="wow fadeInUp" data-wow-delay=".15s">
-
         <div className="flex">
             <div className="mb-5 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-white bg-opacity-10 text-white">
             {icon}
