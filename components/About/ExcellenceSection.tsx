@@ -17,7 +17,7 @@ const ExcellenceSection = () => {
 
             <div className="grid grid-cols-1 gap-x-10 gap-y-32 sm:gap-y-20 md:gap-y-28 lg:gap-y-20 md:grid-cols-2 lg:grid-cols-2">
             {AboutData.map((feature) => (
-                <Singlecomp comp={feature} />            
+                <Singlecomp key={feature.id} comp={feature} />            
             ))}
           </div>
 
