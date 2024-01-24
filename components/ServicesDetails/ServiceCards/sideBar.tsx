@@ -25,7 +25,7 @@ const SideBar = () => {
     <>
       <div
         className="shadow-solid-4 dark:border-strokedark sticky top-[83px] 
-      rounded-lg border border-gray-light bg-gray-light p-4 shadow-three
+      rounded-lg border border-gray-light bg-white p-4 shadow-three
       transition-all dark:border-dark dark:bg-gray-dark "
       >
         <ul className="space-y-2">
@@ -33,13 +33,13 @@ const SideBar = () => {
             <li
               key={index}
               className={`block ${
-                pathname === service.url ? "bg-white dark:bg-white/5" : ""
+                pathname === service.url ? "bg-gray-light dark:bg-white/5" : ""
               }`}
             >
               <Link
                 href={service.url}
                 className="flex w-full rounded-sm px-3 py-2 text-base text-body-color
-               hover:bg-white dark:text-body-color-dark dark:hover:bg-white/5"
+               hover:bg-gray-light  dark:text-body-color-dark dark:hover:bg-white/5"
               >
                 {service.icon && (
                   <span className="mr-2">

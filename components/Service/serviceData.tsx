@@ -4,19 +4,19 @@ const blogData: Service[] = [
   {
     id: 1,
     name: "Lavagem de Carros",
-    href: "#/CarWash",
+    href: "/service/Car-Wash",
     image: "/images/service/Automotive.png",
   },
   {
     id: 2,
     name: "Lavagem de Mobília",
-    href: "#/FurnitureCleaning",
+    href: "/service/Furniture-Washing",
     image: "/images/service/sofa.png",
   },
   {
     id: 3,
     name: "Lavagem de Tanques",
-    href: "#/TankWashing",
+    href: "/service/Tank-Washing",
     image: "/images/service/tank.png",
   },
 ];
