@@ -17,7 +17,7 @@ const blogData: Service[] = [
     id: 3,
     name: "Lavagem de Tanques",
     href: "#/TankWashing",
-    image: "/images/service/Automotive.png",
+    image: "/images/service/tank.png",
   },
 ];
 export default blogData;

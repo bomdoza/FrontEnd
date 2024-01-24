@@ -16,19 +16,19 @@ const menuData: Menu[] = [
       {
         id: 41,
         title: "Lavagem de Carros",
-        path: "/feature/carwash",
+        path: "/service/Car-Wash",
         newTab: false,
       },
       {
         id: 42,
         title: "Lavagem de Mobília",
-        path: "/feature/furniturewash",
+        path: "/service/Furniture-Washing",
         newTab: false,
       },
       {
         id: 43,
         title: "Lavagem de Tanques",
-        path: "/feature/tankwash",
+        path: "/service/Tank-Washing",
         newTab: false,
       },
     ],
