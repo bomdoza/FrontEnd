@@ -1,8 +1,9 @@
-import SectionTitle from "@/components/Common/SectionTitle";
 import CarWashPackages from "@/components/ServicesDetails/CarWashDetails/WashPackages";
 import PartsRestoration from "@/components/ServicesDetails/CarWashDetails/RestorationPackages";
 import ImagesSection from "@/components/ServicesDetails/Images";
 import Tecnicas from "@/components/ServicesDetails/tecnicas";
+import Breadcrumb from "@/components/Common/Breadcrumb";
+import Detalhes from "@/components/detalhes/Services";
 
 import { Metadata } from "next";
 
@@ -26,29 +27,19 @@ const DetailsCarsPage = () => {
   ];
   return (
     <>
-      <section className="mt-16 py-12 md:py-16 lg:py-20">
-        <div className="container px-3">
-          <SectionTitle
-            title="Lavagem de Carros"
-            paragraph=""
-            center
-            mb="10px"
-          />
-          <p className="mx-4 p-1 text-justify text-body-color">
-            Seguir as práticas adequadas de lavagem para preservar a pintura e
+        <section className="mb-10 overflow-hidden pb-[120px] pt-[18px]">
+          <Breadcrumb
+            pageName="Lavagem de Carros"
+            description="Seguir as práticas adequadas de lavagem para preservar a pintura e
             as superfícies do veículo. Além disso, escolher produtos de limpeza
             de qualidade e utilizar os acessórios apropriados, como panos de
             microfibra e escovas macias, ajuda a manter a integridade do
-            acabamento do carro.
-          </p>
-          <Tecnicas tecnicas={tecnicasLavagem} />
-          <ImagesSection imageUrls={carWashImageUrls} />
-          <CarWashPackages />
+            acabamento do carro."
+          />
 
-          <PartsRestoration />
-
-        </div>
-      </section>
+          <Detalhes />
+        
+        </section>
     </>
   );
 };
