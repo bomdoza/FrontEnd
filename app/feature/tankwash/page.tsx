@@ -1,4 +1,4 @@
-import SectionTitle from "@/components/Common/SectionTitle";
+import Breadcrumb from "@/components/Common/Breadcrumb";
 import Packages from "@/components/ServicesDetails/Tanks/Packages";
 import ImagesSection from "@/components/ServicesDetails/Images";
 import Tecnicas from "@/components/ServicesDetails/tecnicas";
@@ -20,29 +20,25 @@ const DetailsTanks = () => {
   ];
   const imageUrls = [
     "/images/servicos/tanques/tanque.jpg",
+    "/images/servicos/tanques/tanque1.png"
   ];
   return (
     <>
-      <section className="mt-16 py-12 md:py-16 lg:py-20">
-        <div className="container px-3">
-          <SectionTitle
-            title="Lavagem de Tanques"
-            paragraph=""
-            center
-            mb="10px"
-          />
-          <p className="mx-4 p-1 text-justify text-body-color">
-            Na BomDoza, nos comprometemos a fornecer uma abordagem exemplar na lavagem de tanques. 
-            Contamos com uma equipe especializada que emprega técnicas avançadas e soluções personalizadas para devolver 
-            a integridade e a eficiência aos seus tanques, independentemente da complexidade do desafio.
-          </p>
+        <section className="mb-10 overflow-hidden pb-[120px] pt-[18px]">
 
-          <Tecnicas tecnicas={tecnicasLavagem} />
-          <ImagesSection imageUrls={imageUrls} />
+            <Breadcrumb
+              pageName="Lavagem de Tanques"
+              description="Na BomDoza, nos comprometemos a fornecer uma abordagem exemplar na lavagem de tanques. 
+              Contamos com uma equipe especializada que emprega técnicas avançadas e soluções personalizadas para devolver 
+              a integridade e a eficiência aos seus tanques, independentemente da complexidade do desafio."
+            />
 
-          <Packages />
-        </div>
-      </section>
+            <Tecnicas tecnicas={tecnicasLavagem} />
+            <ImagesSection imageUrls={imageUrls} />
+
+            <Packages />
+
+        </section>
     </>
   );
 };
