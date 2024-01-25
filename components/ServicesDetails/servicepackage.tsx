@@ -13,7 +13,7 @@ interface ServicePackageProps {
 
 const ServicePackage: React.FC<ServicePackageProps> = ({ title, description, services, prices }) => {
   return (
-    <div className="border border-solid border-gray-500 w-72 h-96 p-2 my-2 md:mx-2 lg:mx-3">
+    <div className="border border-solid border-gray-500 w-72 h-96 p-2 my-2 md:mx-2 lg:mx-3 text-center">
       <div className="h-1/4 pt-3">
         <h1 className="text-2xl font-bold">{title}</h1>
         <p className="text-body-color mt-2">{description}</p>
