@@ -13,7 +13,6 @@ const ContactPage = () => {
         <Breadcrumb
         pageName="Contacto"
         description="Estamos aqui para tornar o processo de contato tão fácil quanto a limpeza que oferecemos. Não hesite em nos chamar para descobrir como podemos transformar seus pertences com cuidado e qualidade. Estamos ansiosos para ouvir de você!"
-        
         />
       <Contact />
     </>

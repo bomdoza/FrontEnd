@@ -3,11 +3,6 @@ import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import ExcellenceSection from "@/components/About/ExcellenceSection";
 
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Bom Doza-Sobre-nós",
-};
 
 const AboutPage = () => {
   return (

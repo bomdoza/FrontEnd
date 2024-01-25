@@ -13,14 +13,15 @@ export const metadata: Metadata = {
 const GalleryPage = () => {
 
     const imageUrls = [
-        '/images/servicos/carros/lavagemdecarro.jpg',
-        '/images/servicos/tanques/tanque.jpg',
-        '/images/servicos/tapetes/tapete1.jpeg',
-        '/images/servicos/carros/pexels.jpg',
-        '/images/servicos/sofas/sofa3.jpg',
-        '/images/servicos/sofas/sofa1.png',
-        '/images/servicos/carros/LAVA.jpg',
-      ];
+      "/images/service/car/lavagemdecarro.jpg",
+      "/images/service/car/pexels.jpg",
+      "/images/service/car/lava.jpg",
+      "/images/service/furniture/tapete1.jpeg",
+      "/images/service/furniture/sofa3.jpg",
+      "/images/service/furniture/sofa1.png",
+      "/images/service/tank/tanque.jpg",
+      "/images/service/tank/tanque1.png",
+    ];
 
   return (
     <>

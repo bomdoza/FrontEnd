@@ -10,7 +10,7 @@ const SideBar = () => {
   const services = [
     { title: "Lavagem de Carros", icon: faCar, url: "/service/Car-Wash" },
     {
-      title: "Lavagem de Mobília",
+      title: "Lavagem de Mobílias",
       icon: faChair,
       url: "/service/Furniture-Washing",
     },
@@ -55,7 +55,7 @@ const SideBar = () => {
       <div
         className="z-10 mt-3  h-[300px] w-full overflow-hidden  rounded-lg border bg-cover bg-center px-4 shadow-three"
         style={{
-          backgroundImage: 'url("/images/servicos/tanques/tanque.jpg")',
+          backgroundImage: 'url("/images/service/tank/tanque.jpg")',
         }}
       >
         <div className="py-8">
@@ -65,7 +65,7 @@ const SideBar = () => {
           <p className="mb-2 text-center font-bold">
             Ligue para Bom Doza ou entre em contato
           </p>
-          <h1 className="text-center text-[20px] font-bold">9888999</h1>
+          <h1 className="text-center text-[20px] font-bold">99998999</h1>
         </div>
         <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
           <Link

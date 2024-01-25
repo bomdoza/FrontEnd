@@ -24,50 +24,45 @@ function AboutSectionThree() {
       );
 
   return (
-
     <section className="pt-16 md:pt-20 lg:pt-24">
-        <div className='container flex flex-wrap items-center'>
-
-            <div className='w-full lg:px-4 lg:w-1/2'>
-
-                <SectionTitle 
-                  title='É hora de limpar seus pertences'
-                  paragraph=''
-                  mb='30px'
-                />
-                <DivTitle 
-                  title=''
-                  paragraph='É hora de elevar o padrão de limpeza dos seus pertences! Na Bom Doza, 
+      <div className="container flex flex-wrap items-center">
+        <div className="w-full lg:w-1/2 lg:px-4">
+          <SectionTitle
+            title="É hora de limpar seus pertences"
+            paragraph=""
+            mb="30px"
+          />
+          <DivTitle
+            title=""
+            paragraph="É hora de elevar o padrão de limpeza dos seus pertences! Na Bom Doza, 
                   dedicamos nossa expertise em transformar o comum em impecável. Seja o seu carro, sofá, 
-                  tapete ou qualquer outro item, nossa equipe especializada está pronta para proporcionar uma limpeza excepcional.'
-                  mb='50px'
-                />
+                  tapete ou qualquer outro item, nossa equipe especializada está pronta para proporcionar uma limpeza excepcional."
+            mb="50px"
+          />
 
-                <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
-                    <List text="Somos um serviço profissional de lavagem" />
-                    <List text="Usamos os melhores materias de lavagem" />
-                    <List text="Preocupamos com a satisfação dos nossos clientes" />           
-                </div>
+          <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
+            <List text="Somos um serviço profissional de lavagem" />
+            <List text="Usamos os melhores materias de lavagem" />
+            <List text="Preocupamos com a satisfação dos nossos clientes" />
+          </div>
+        </div>
 
-            </div>
-
-            <div className='w-full px-4 lg:w-1/2 relative'>
-                <div className="wow fadeInRight relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
-                    data-wow-delay=".2s"
-                    > 
-                    <Image
-                        src="/images/servicos/pecas/man-polish-car-garage.jpg"
-                        alt='bomdoza'
-                        fill={true}
-                        className="rounded-md"
-                    />         
-                </div>
-            </div>
-
-        </div>       
+        <div className="relative w-full px-4 lg:w-1/2">
+          <div
+            className="wow fadeInRight relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
+            data-wow-delay=".2s"
+          >
+            <Image
+              src="/images/service/car/plas.jpg"
+              alt="bomdoza"
+              fill={true}
+              className="rounded-md"
+            />
+          </div>
+        </div>
+      </div>
     </section>
-
-  )
+  );
 
 }
 

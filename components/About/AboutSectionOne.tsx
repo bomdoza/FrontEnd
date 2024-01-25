@@ -7,7 +7,7 @@ const AboutSectionOne = () => {
   return (
     <section id="about">
       <div className="container">
-        <div className="border-b border-body-color/[.15] dark:border-white/[.15] py-12 md:py-14 lg:py-114">
+        <div className="lg:py-114 border-b border-body-color/[.15] py-12 dark:border-white/[.15] md:py-14">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <DivTitle
@@ -16,13 +16,13 @@ const AboutSectionOne = () => {
                 mb="44px"
               />
 
-                <div className="flex flex-wrap">
-                  <DivTitle
+              <div className="flex flex-wrap">
+                <DivTitle
                   title="Sustentabilidade"
                   paragraph="Além de buscar a excelência nos resultados, a BomDoza é comprometida com práticas sustentáveis. Procuramos minimizar nosso impacto ambiental, escolhendo produtos e métodos que respeitam o meio ambiente."
                   mb="44px"
                 />
-                </div>
+              </div>
             </div>
 
             <div className="w-full px-4 lg:w-1/2">
@@ -31,16 +31,10 @@ const AboutSectionOne = () => {
                 data-wow-delay=".2s"
               >
                 <Image
-                  src="/images/servicos/tapetes/limpador-a-vapor.jpg"
-                  alt="about-image"
-                  fill                
-                  className=" rounded-mddrop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                <Image
-                  src="/images/servicos/tapetes/limpador-a-vapor.jpg"
+                  src="/images/service/furniture/limpador-a-vapor.jpg"
                   alt="about-image"
                   fill
-                  className="rounded-md drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
+                  className=" rounded-mddrop-shadow-three mx-auto max-w-full rounded-lg lg:mr-0"
                 />
               </div>
             </div>

@@ -2,9 +2,9 @@
 import { usePathname } from "next/navigation";
 import { useRouter } from 'next/navigation'
 import SideBar from "@/components/ServicesDetails/ServiceCards/sideBar";
-import CarWashContent from "@/components/ServicesDetails/CarWashDetails/RestorationPackages";
-import FurnitureWashingContent from "@/components/ServicesDetails/Furniture/Packages";
-import TankWashingContent from "@/components/ServicesDetails/Tanks/Packages";
+import CarWashContent from "@/components/ServicesDetails/CarWash/page";
+import FurnitureWashingContent from "@/components/ServicesDetails/FurnitureWashing/page";
+import TankWashingContent from "@/components/ServicesDetails/TankWashing/page";
 
 const ServiceType = () => {
 
