@@ -62,7 +62,7 @@ const TankWashing = () => {
               <h3 className="font-xl mb-5 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                 Tipos de lavagem de tanques e serviços da Bom Doza
               </h3>
-              <p className="mb-10 text-justify text-base font-medium leading-relaxed
+              <p className="mb-5 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed 
                 lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
