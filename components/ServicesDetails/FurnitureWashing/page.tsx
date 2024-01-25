@@ -49,7 +49,7 @@ const FurnitureWashingDetails = () => {
               text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed
                 xl:text-lg xl:leading-relaxed"
               >
-                Na BomDoza, entendemos que os seus móveis são mais do que
+                Na Bom Doza, entendemos que os seus móveis são mais do que
                 simples peças de decoração - são parte integrante do seu espaço
                 e refletem o seu estilo de vida. Apresentamos o nosso serviço
                 especializado de Lavagem de Móveis, criado para renovar e
@@ -76,7 +76,7 @@ const FurnitureWashingDetails = () => {
                text-body-color sm:text-lg sm:leading-relaxed lg:text-base
                lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
-                Na BomDoza, comprometemo-nos a oferecer um serviço de lavagem de
+                Na Bom Doza, comprometemo-nos a oferecer um serviço de lavagem de
                 móveis que vai além das expectativas. Confie-nos para
                 revitalizar seus móveis e criar um ambiente que você se orgulha
                 de chamar de seu.
@@ -95,7 +95,7 @@ const FurnitureWashingDetails = () => {
               <div className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
                 <p className="text-center text-base font-medium italic text-body-color">
                   Escolha o tipo de lavagem que melhor atende às necessidades do
-                  seu veículo. Na BomDoza, oferecemos uma variedade de opções
+                  seu veículo. Na Bom Doza, oferecemos uma variedade de opções
                   para garantir que seu carro receba o cuidado específico que
                   merece. Agende agora a lavagem do seu carro e experimente a
                   excelência em cuidados automotivos!

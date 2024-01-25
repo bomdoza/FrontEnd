@@ -87,7 +87,7 @@ const TankWashing = () => {
                bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9"
               >
                 <p className="text-center text-base font-medium italic text-body-color">
-                  Na BomDoza, comprometemo-nos a fornecer um serviço de lavagem
+                  Na Bom Doza, comprometemo-nos a fornecer um serviço de lavagem
                   de tanques que atenda às necessidades específicas dos nossos
                   clientes. Agende agora a lavagem dos seus tanques e assegure a
                   integridade dos seus líquidos armazenados.
