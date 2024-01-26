@@ -7,8 +7,13 @@ import Blog from "@/components/Blog";
 import Service from "@/components/Service";
 import Brands from "@/components/Brands";
 import Faq from "@/components/Faq";
+//import { promises } from "dns";
+//import { resolve } from "path";
 
-export default function Home() {
+
+export default  function Home() {
+
+//await new Promise((resolve) => setTimeout(resolve, 4000))
   return (
     <>
       <HomeSlider />

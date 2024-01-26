@@ -1,4 +1,4 @@
-import Link from "next/link";
+import BackgroundImage from "../BackgroundImage/image";
 
 const Hero = () => {
   return (
@@ -6,8 +6,10 @@ const Hero = () => {
       <section
         id="home"
         className="relative z-10 h-[550px] overflow-hidden bg-cover bg-center pb-16 pt-[120px] sm:h-[500px] md:h-[560px] md:pb-[120px] md:pt-[150px] xl:h-[650px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
-        style={{ backgroundImage: 'url("/images/hero/background/carro2.png")' }}
       >
+        <BackgroundImage
+          image={"/images/hero/background/carro2.png"}
+        />
 
         <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
           <svg

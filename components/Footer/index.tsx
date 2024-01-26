@@ -81,7 +81,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="#"
+                      href="code-conduct"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Código de Conduta
@@ -89,7 +89,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/terms-services"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Termos de Serviços
@@ -97,10 +97,10 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/terms-use"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Código de Conduta
+                      Termo de uso
                     </Link>
                   </li>
                 </ul>
