@@ -1,11 +1,9 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 
-const Footer = () => {
-
+const Footer = ({ lang }) => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <>
       <footer

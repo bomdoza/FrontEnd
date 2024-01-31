@@ -1,18 +1,11 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../../styles/index.css";
-import { i18n } from "@/config/i18n.config";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export async function generateStaticParams() {
-  const languages = i18n.locales.map((lang) => ({ lang }));
-  return languages;
-}
-
 
 export default function RootLayout({
   children,
@@ -33,10 +26,14 @@ export default function RootLayout({
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
-            <Header />
+          <Header
+            lang={lang}
+          />
           {children}
-          <Footer />
-          {/*<ScrollToTop />*/}
+          <Footer
+            lang={lang}
+          />
+          <ScrollToTop />
         </Providers>
       </body>
     </html>

@@ -10,7 +10,8 @@ const ServiceType = () => {
 
   const router = useRouter()
   const pathname = usePathname();
-  const type = pathname.replace(/^\/service\//, "");
+  const match = pathname.match(/\/service\/(.+)/);
+  const type = match ? match[1] : null;
 
   const renderContent = () => {
     

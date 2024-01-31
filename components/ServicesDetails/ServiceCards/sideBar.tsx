@@ -5,7 +5,10 @@ import Link from "next/link";
 import { usePathname} from "next/navigation";
 
 const SideBar = () => {
+  
   const pathname = usePathname();
+  const match = pathname.match(/\/service\/(.+)/);
+  const type = match ? `/service/${match[1]}` : null;
 
   const services = [
     { title: "Lavagem de Carros", icon: faCar, url: "/service/Car-Wash" },
@@ -33,7 +36,7 @@ const SideBar = () => {
             <li
               key={index}
               className={`block ${
-                pathname === service.url ? "bg-gray-light dark:bg-white/5" : ""
+                type === service.url ? "bg-gray-light dark:bg-white/5" : ""
               }`}
             >
               <Link

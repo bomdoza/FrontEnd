@@ -4,10 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, useRef } from "react";
 import ThemeToggler from "./ThemeToggler";
-import menuData from "./menuData";
+//import menuData from "./menuData";
+import { Lang } from "./Lang";
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-const Header = () => {
+const Header = ({lang}) => {
 
+  const {dictionary} = getDictionaryUseClient(lang);
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const menuRef = useRef(null);
@@ -137,7 +140,7 @@ useEffect(() => {
                   }`}
                 >
                   <ul className="block lg:flex lg:space-x-8 xl:space-x-12">
-                    {menuData.map((menuItem, index) => (
+                    {dictionary.menu.menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
                           <Link
@@ -196,7 +199,7 @@ useEffect(() => {
                         href="/contact"
                         className="ease-in-up  rounded-sm bg-primary px-6 py-2 text-base font-medium text-white shadow-btn transition duration-300 hover:bg-opacity-90 hover:shadow-btn-hover md:block md:px-9 lg:px-6 xl:px-9"
                       >
-                        Contactar
+                        {dictionary.labelButtonMenu.labelButton}
                       </Link>
                     </li>
                   </ul>
@@ -207,8 +210,9 @@ useEffect(() => {
                   href="/contact"
                   className="ease-in-up hidden rounded-sm bg-primary px-6 py-2 text-base font-medium text-white shadow-btn transition duration-300 hover:bg-opacity-90 hover:shadow-btn-hover md:block md:px-9 lg:px-6 xl:px-9"
                 >
-                  Contactar
+                  {dictionary.labelButtonMenu.labelButton}
                 </Link>
+                <Lang />
                 <div>
                   <ThemeToggler />
                 </div>

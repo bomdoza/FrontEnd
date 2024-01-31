@@ -27,7 +27,7 @@ const RelatedPost = ({
             href={slug}
             className="mb-[6px] block text-base font-medium leading-snug text-black hover:text-primary dark:text-white dark:hover:text-primary"
           >
-            {title.slice(0, 53)}...
+            {title.slice(0, 30)}...
           </Link>
         </h5>
         <p className="text-xs font-medium text-body-color">{publishDate}</p>

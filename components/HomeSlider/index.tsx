@@ -7,10 +7,13 @@ import Hero1 from "@/components/Hero1";
 import { useState } from 'react';
 import './style.css';
 import Link from "next/link";
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-const HomeSlider = () => {
+const HomeSlider = ({lang}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
+  const { dictionary } = getDictionaryUseClient(lang);
+  console.log(dictionary)
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -28,16 +31,15 @@ const HomeSlider = () => {
         <Hero />
         <Hero1 />
       </Slider>
-      <div className="absolute mt-5 px-3 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center text-white  w-full ">
+      <div className="absolute left-1/2 top-1/2 mt-5 w-full -translate-x-1/2 -translate-y-1/2 transform px-3 text-center  text-white ">
         <p className="mb-2 text-base !leading-relaxed text-body-color dark:text-white sm:text-xs md:text-xl">
-          O melhor serviço de lavagem
+          {dictionary.home.heroTitle}
         </p>
         <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-5xl md:leading-tight">
-          Lavagem profissional completa.
+          {dictionary.home.heroDesc}
         </h1>
         <p className="mb-10 text-base !leading-relaxed text-body-color dark:text-white sm:text-xs md:text-xl">
-          Somos uma empresa especializada em proporcionar serviços de lavagem
-          automotiva de alta qualidade e eficiência.
+          {dictionary.home.heroSubDesc}
         </p>
 
         <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -45,7 +47,7 @@ const HomeSlider = () => {
             href="/contact"
             className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
           >
-            Contacte-nos
+            {dictionary.home.heroLabelButton}
           </Link>
         </div>
       </div>

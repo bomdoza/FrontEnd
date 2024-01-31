@@ -7,23 +7,23 @@ import Blog from "@/components/Blog";
 import Service from "@/components/Service";
 import Brands from "@/components/Brands";
 import Faq from "@/components/Faq";
-//import { promises } from "dns";
-//import { resolve } from "path";
+
 import { getDictionaryServerOnly } from "@/dictionaries/dictionary-server-only";
 
 export default  function Home({ params: { lang} }) {
-  //await new Promise((resolve) => setTimeout(resolve, 4000))
-  console.log(lang);
-  const dict = getDictionaryServerOnly(lang);
-  console.log(dict.site.heroTitle);
+
+  const {dictionary, interpolation}= getDictionaryServerOnly(lang);
+  //console.log(dictionary);
   
   return (
     <>
-      <HomeSlider />
+      <HomeSlider
+        lang={lang}
+      />
       <ScrollUp />
-      <div className="p-20">
-        <p>{dict.site.heroTitle}</p>
-      </div>
+      {/*<div className="p-20">
+        {interpolation(dictionary[`Welcome {{name}}`], { name: `jailson` })}
+        </div>*/}
       <AboutSectionThree />
       <Service />
       <Brands />
