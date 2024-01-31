@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PackagePrice from "../packagePrice";
 
 const CarWashDetails = () => {
 
@@ -26,16 +27,17 @@ const CarWashDetails = () => {
       <div className="-mx-4 flex flex-wrap justify-center px-4">
         <div className="w-full">
           <div>
-            <h2 className="text-center text-2xl font-bold leading-tight
+            <h2
+              className="text-center text-2xl font-bold leading-tight
              text-black dark:text-white sm:text-4xl sm:leading-tight md:text-3xl"
             >
               Lavagem de Carros
             </h2>
-            <div className=" mb-3 flex flex-wrap items-center justify-between
+            <div
+              className=" mb-3 flex flex-wrap items-center justify-between
              border-b border-body-color border-opacity-10 pb-2
-              dark:border-white dark:border-opacity-10">
-              
-              </div>
+              dark:border-white dark:border-opacity-10"
+            ></div>
             <div>
               <div className="mb-5 w-full overflow-hidden rounded">
                 <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
@@ -68,13 +70,15 @@ const CarWashDetails = () => {
                 aos detalhes no interior, estamos comprometidos em oferecer
                 resultados excepcionais.
               </p>
-              <h3 className="font-xl mb-5 font-bold leading-tight
+              <h3
+                className="font-xl mb-5 font-bold leading-tight
                text-black dark:text-white sm:text-2xl sm:leading-tight
                 lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight"
-            >
+              >
                 Tipos de lavagem de carros e serviços da BomDoza
               </h3>
-              <p className="mb-5 text-justify text-base font-medium leading-relaxed
+              <p
+                className="mb-5 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed lg:text-base
                lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
@@ -97,13 +101,15 @@ const CarWashDetails = () => {
                   ))}
               </ul>
 
-              <h3 className="font-xl mb-5 font-bold leading-tight text-black
+              <h3
+                className="font-xl mb-5 font-bold leading-tight text-black
                dark:text-white sm:text-2xl sm:leading-tight lg:text-xl
                 lg:leading-tight xl:text-2xl xl:leading-tight"
               >
                 Lavagem de carros no conforto da sua casa ou empresa
               </h3>
-              <p className="mb-5 text-justify text-base font-medium leading-relaxed
+              <p
+                className="mb-5 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed lg:text-base
                 lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
@@ -114,13 +120,15 @@ const CarWashDetails = () => {
                 proporcionamos uma solução de limpeza completa e eficiente, sem
                 que você precise sair do lugar.
               </p>
-              <h3 className="font-xl mb-5 font-bold leading-tight text-black
+              <h3
+                className="font-xl mb-5 font-bold leading-tight text-black
                dark:text-white sm:text-2xl sm:leading-tight lg:text-xl
                 lg:leading-tight xl:text-2xl xl:leading-tight"
               >
                 Agende a lavagem do seu carro sem sair de Ccsa:
               </h3>
-              <p className="mb-5 text-justify text-base font-medium leading-relaxed
+              <p
+                className="mb-5 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed lg:text-base
                lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
@@ -131,7 +139,8 @@ const CarWashDetails = () => {
                 oferecer soluções de limpeza eficientes e personalizadas para
                 atender às suas necessidades.
               </p>
-              <div className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary 
+              <div
+                className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary 
                 bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9"
               >
                 <p className="text-center text-base font-medium italic text-body-color">
@@ -277,6 +286,8 @@ const CarWashDetails = () => {
                 </span>
               </div>
             </div>
+
+            <PackagePrice />
           </div>
         </div>
       </div>

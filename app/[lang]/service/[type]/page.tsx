@@ -38,7 +38,7 @@ const ServiceType = () => {
             </div>
 
             <div className="w-full px-2 lg:w-3/4">
-              <div className="blog-details blog-details-docs rounded-lg bg-white px-2 py-6 shadow-three dark:bg-gray-dark  lg:mb-5 lg:px-8 xl:p-[55px]">
+              <div className="blog-details blog-details-docs rounded-lg bg-white px-2 py-6 shadow-three dark:bg-gray-dark  lg:mb-5 lg:px-8 xl:p-[20px]">
                 <div className="blog-details">{renderContent()}</div>
               </div>
             </div>

@@ -12,7 +12,6 @@ import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-cl
 const HomeSlider = ({lang}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const { dictionary } = getDictionaryUseClient(lang);
-  console.log(dictionary)
   
   const settings = {
     dots: true,
