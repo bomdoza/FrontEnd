@@ -1,20 +1,24 @@
 "use client";
 import AccordionItem from "./AccordionItem";
 import SectionTitle from "../Common/SectionTitle";
-import FAQData from "./faqData";
 
-const Accordion = () => {
+import { getDictionaryUseClient} from "@/dictionaries/default-dictionary-use-client";
+
+const Accordion = ({ lang }) => {
+  
+  const { dictionary } = getDictionaryUseClient(lang);
+
   return (
     <section className="relative z-20 overflow-hidden bg-white pb-8 pt-8 dark:bg-dark lg:pb-[22px] lg:pt-[30px]">
       <div className="container mx-auto">
         <SectionTitle
-          title="Perguntas frequentes"
-          paragraph="Tire as suas dúvidas sobre os servços Bom Doza"
+          title={dictionary.home.faq.title}
+          paragraph={dictionary.home.faq.descripition}
           center
         />
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2">
-            {FAQData.slice(0,3).map((faq) => (
+            {dictionary.home.faq.FaqItem.slice(0, 3).map((faq) => (
               <AccordionItem
                 key={faq.id}
                 header={faq.question}
@@ -23,7 +27,7 @@ const Accordion = () => {
             ))}
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            {FAQData.slice(3,6).map((faq) => (
+            {dictionary.home.faq.FaqItem.slice(3, 6).map((faq) => (
               <AccordionItem
                 key={faq.id}
                 header={faq.question}

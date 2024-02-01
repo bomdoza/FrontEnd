@@ -2,8 +2,8 @@
 const tabs = [
   {
     id: "1",
-    title: "Carros Pequenos",
-    icon: "faCarSide",
+    title: "Lavagem de Sofá",
+    icon: "faCouch",
     packages: [
       {
         name: "Básico",
@@ -79,11 +79,11 @@ const tabs = [
 
   {
     id: "2",
-    title: "Carros Médios",
-    icon: "faVanShuttle",
+    title: "Lavagem de Tapetes",
+    icon: "faRug",
     packages: [
       {
-        name: "2Básico",
+        name: "Básico",
         presencialPrice: "600",
         domicilioPrice: "1500",
         desc: "Pacote Básico para uma limpeza básica.",
@@ -153,82 +153,7 @@ const tabs = [
       },
     ],
   },
-  {
-    id: "3",
-    title: "Carros Grandes",
-    icon: "faTruck",
-    packages: [
-      {
-        name: "3Básico",
-        presencialPrice: "800",
-        domicilioPrice: "2000",
-        desc: "Pacote Básico para uma limpeza básica.",
-        services: [
-          {
-            name: "Lavagem externa",
-            activePresencial: true,
-            activeDomicilio: true,
-          },
-          {
-            name: "Aspiração interna",
-            activePresencial: true,
-            activeDomicilio: true,
-          },
-        ],
-      },
-      {
-        name: "Médio",
-        presencialPrice: "800",
-        domicilioPrice: "2000",
-        desc: "Pacote Médio para uma limpeza mais abrangente.",
-        services: [
-          {
-            name: "Lavagem externa",
-            activePresencial: true,
-            activeDomicilio: true,
-          },
-          {
-            name: "Aspiração interna",
-            activePresencial: true,
-            activeDomicilio: true,
-          },
-          {
-            name: "Enceramento",
-            activePresencial: true,
-            activeDomicilio: false,
-          },
-        ],
-      },
-      {
-        name: "Avançado",
-        presencialPrice: "800",
-        domicilioPrice: "2000",
-        desc: "Pacote Avançado para uma limpeza completa e avançada.",
-        services: [
-          {
-            name: "Lavagem externa",
-            activePresencial: true,
-            activeDomicilio: true,
-          },
-          {
-            name: "Aspiração interna",
-            activePresencial: true,
-            activeDomicilio: true,
-          },
-          {
-            name: "Enceramento",
-            activePresencial: true,
-            activeDomicilio: true,
-          },
-          {
-            name: "Polimento",
-            activePresencial: true,
-            activeDomicilio: false,
-          },
-        ],
-      },
-    ],
-  },
+ 
 ];
 
 

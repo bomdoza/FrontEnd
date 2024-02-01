@@ -4,8 +4,9 @@ import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 
 const Pricing = ({ data }) => {
+  
   const [isDomicile, setIsDomicile] = useState(true);
-console.log(data);
+
   return (
     <section id="pricing" className="relative z-10 py-10">
       <div className="container">
@@ -62,12 +63,17 @@ console.log(data);
                 duration={""}
                 subtitle={tab.desc}
               >
-                <OfferList text="All UI Components" status="active" />
-                <OfferList text="Use with Unlimited Projects" status="active" />
-                <OfferList text="Commercial Use" status="active" />
-                <OfferList text="Email Support" status="active" />
-                <OfferList text="Lifetime Access" status="inactive" />
-                <OfferList text="Free Lifetime Updates" status="inactive" />
+                {tab.services.map((service, serviceIndex) => (
+                  <OfferList
+                    key={serviceIndex}
+                    text={service.name}
+                    status={
+                      isDomicile
+                        ? service.activePresencial
+                        : service.activeDomicilio
+                    }
+                  />
+                ))}
               </PricingBox>
             ))}
         </div>

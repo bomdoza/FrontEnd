@@ -2,8 +2,11 @@ import React from 'react'
 import DivTitle from '../Common/DivTitle'
 import SectionTitle from '../Common/SectionTitle'
 import Image from 'next/image'
+import { getDictionaryServerOnly} from "@/dictionaries/dictionary-server-only";
 
-function AboutSectionThree() {
+function AboutSectionThree({ lang }) {
+  const { dictionary } = getDictionaryServerOnly(lang);
+
     const checkIcon = (
         <svg 
         width="1em" 
@@ -28,22 +31,20 @@ function AboutSectionThree() {
       <div className="container flex flex-wrap items-center">
         <div className="w-full lg:w-1/2 lg:px-4">
           <SectionTitle
-            title="É hora de limpar seus pertences"
+            title={dictionary.home.aboutSectionThree.title}
             paragraph=""
             mb="30px"
           />
           <DivTitle
             title=""
-            paragraph="É hora de elevar o padrão de limpeza dos seus pertences! Na Bom Doza, 
-                  dedicamos nossa expertise em transformar o comum em impecável. Seja o seu carro, sofá, 
-                  tapete ou qualquer outro item, nossa equipe especializada está pronta para proporcionar uma limpeza excepcional."
+            paragraph={dictionary.home.aboutSectionThree.description}
             mb="50px"
           />
 
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
-            <List text="Somos um serviço profissional de lavagem" />
-            <List text="Usamos os melhores materias de lavagem" />
-            <List text="Preocupamos com a satisfação dos nossos clientes" />
+            {dictionary.home.aboutSectionThree.list.map((item, index) => (
+              <List key={index} text={item.text} />
+            ))}
           </div>
         </div>
 

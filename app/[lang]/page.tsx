@@ -17,20 +17,18 @@ export default  function Home({ params: { lang} }) {
   
   return (
     <>
-      <HomeSlider
-        lang={lang}
-      />
+      <HomeSlider lang={lang} />
       <ScrollUp />
       {/*<div className="p-20">
         {interpolation(dictionary[`Welcome {{name}}`], { name: `jailson` })}
         </div>*/}
-      <AboutSectionThree />
-      <Service />
+      <AboutSectionThree lang={lang} />
+      <Service lang={lang} />
       <Brands />
-      <Testimonials />
-      <Faq />
+      <Testimonials lang={lang} />
+      <Faq lang={lang} />
       <Gallery />
-      <Blog />
+      <Blog lang={lang} />
     </>
   );
 }

@@ -2,48 +2,25 @@ import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
 
-const testimonialData: Testimonial[] = [
-  {
-    id: 1,
-    name: "Miguel",
-    designation: "Taxista",
-    content:
-      "A Bom Doza superou minhas expectativas na limpeza do meu carro. A atenção aos detalhes e a qualidade dos produtos deixaram meu carro impecável. Recomendo!",
-    image: "/images/user/userDefault.png",
-    star: 5,
-  },
-  {
-    id: 2,
-    name: "Beatriz",
-    designation: "Dona de casa",
-    content:
-      "A Bom Doza fez um trabalho incrível na limpeza dos meus tapetes. A equipe foi eficiente cuidaDoza e trouxe uma nova vida aos meus tapetes. Estou muito satisfeito!",
-    image: "/images/user/userDefault.png",
-    star: 5,
-  },
-  {
-    id: 3,
-    name: "Matheus",
-    designation: "Empresário",
-    content:
-      "A Bom Doza foi a escolha certa para a limpeza dos tanques na minha empresa. Demonstraram conhecimento especializado, segurança e eficiência. Recomendo!",
-    image: "/images/user/userDefault.png",
-    star: 5,
-  },
-];
 
-const Testimonials = () => {
+import { getDictionaryServerOnly } from "@/dictionaries/dictionary-server-only";
+
+
+const Testimonials = ({ lang }) => {
+
+  const {dictionary} = getDictionaryServerOnly(lang);
+
   return (
-    <section className="relative z-10 pb-8 pt-5 bg-gray-light py-13 dark:bg-bg-color-dark">
+    <section className="py-13 relative z-10 bg-gray-light pb-8 pt-5 dark:bg-bg-color-dark">
       <div className="container">
         <SectionTitle
-          title="O que os nossos clientes dizem"
-          paragraph="A satisfação dos nossos clientes é o melhor testemunho da nossa dedicação à excelência"
+          title={dictionary.home.testimonial.title}
+          paragraph={dictionary.home.testimonial.descripition}
           center
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {testimonialData.map((testimonial) => (
+          {dictionary.home.testimonial.testimonialPeople.map((testimonial) => (
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>

@@ -5,36 +5,36 @@ import Pricing from "@/components/Pricing";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faCouch, faRug } from "@fortawesome/free-solid-svg-icons";
-import { faGlassWaterDroplet } from "@fortawesome/free-solid-svg-icons";
+import { faGlassWaterDroplet,faWater,faGlassWater} from "@fortawesome/free-solid-svg-icons";
 import {
   faCarSide,
   faTruck,
   faVanShuttle,
 } from "@fortawesome/free-solid-svg-icons";
-import PricingData from "./PricingData";
 
 
 
 
-export default function UnconventionalTabs() {
-
-  console.log(PricingData);
+export default function UnconventionalTabs({PricingData}) {
 
   return (
     <Tab.Group>
       {({ selectedIndex }) => (
-        <div className={``}>
+        <div className="mt-10">
           {/* Buttons */}
           <div className="flex justify-center">
-            <Tab.List className="mb-2 inline-flex flex-wrap items-center justify-center gap-4 pb-1">
+            <Tab.List className="mb-2 inline-flex flex-wrap  items-center justify-center gap-4 pb-1">
               {PricingData.map((tab, index) => (
                 <Tab key={index} as={Fragment}>
                   <button
-                    className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-indigo-300 flex-1 flex-col justify-between whitespace-nowrap rounded-sm border p-2 px-4 text-sm font-medium transition-colors duration-150 ease-in-out focus-visible:outline-none ${
-                      selectedIndex === index
-                        ? "border-none bg-primary text-white"
-                        : "text-primary hover:border-primary hover:bg-primary hover:text-white"
-                    }`}
+                    className={`ui-focus-visible:outline-none  ui-focus-visible:ring ui-focus-visible:ring-indigo-300  flex-1  flex-col 
+                    items-center justify-between whitespace-nowrap rounded-sm border border-solid-1 border-primary
+                     p-2 px-4 text-sm font-medium transition-colors duration-150 ease-in-out focus-visible:outline-none 
+                     md:flex-row ${
+                       selectedIndex === index
+                         ? "border-none bg-primary text-white"
+                         : "  text-primary hover:border-primary hover:bg-primary hover:text-white"
+                     }`}
                   >
                     <span>
                       <FontAwesomeIcon
@@ -73,7 +73,20 @@ function getFontAwesomeIcon(iconName: string): IconProp {
       return faTruck;
     case "faVanShuttle":
       return faVanShuttle;
+
+    case "faCouch":
+      return faCouch;
+    case "faRug":
+      return faRug;
+
+    case "faGlassWaterDroplet":
+      return faGlassWaterDroplet;
+    case "faWater":
+      return faWater;
+    case "faGlassWater":
+      return faGlassWater;
+
     default:
-      return faCarSide; 
+      return faCarSide;
   }
 }

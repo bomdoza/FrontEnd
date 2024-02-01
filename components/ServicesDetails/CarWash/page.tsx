@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PackagePrice from "../packagePrice";
-
+import PricingData from "../PricingDataCar";
 const CarWashDetails = () => {
 
    const services = [
@@ -125,7 +125,7 @@ const CarWashDetails = () => {
                dark:text-white sm:text-2xl sm:leading-tight lg:text-xl
                 lg:leading-tight xl:text-2xl xl:leading-tight"
               >
-                Agende a lavagem do seu carro sem sair de Ccsa:
+                Agende a lavagem do seu carro sem sair de Casa:
               </h3>
               <p
                 className="mb-5 text-justify text-base font-medium leading-relaxed
@@ -139,6 +139,7 @@ const CarWashDetails = () => {
                 oferecer soluções de limpeza eficientes e personalizadas para
                 atender às suas necessidades.
               </p>
+              <PackagePrice PricingData={PricingData} />
               <div
                 className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary 
                 bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9"
@@ -287,7 +288,7 @@ const CarWashDetails = () => {
               </div>
             </div>
 
-            <PackagePrice />
+            
           </div>
         </div>
       </div>

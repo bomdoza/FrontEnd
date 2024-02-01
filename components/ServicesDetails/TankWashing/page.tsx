@@ -1,4 +1,6 @@
 import Image from "next/image";
+import PackagePrice from "../packagePrice";
+import PricingData from "../PricingDataTank";
 
 const TankWashing = () => {
   const services = [
@@ -108,11 +110,11 @@ const TankWashing = () => {
               >
                 Não deixe a manutenção dos seus tanques para depois. Agende
                 agora a lavagem dos seus tanques e aproveite a conveniência de
-                receber serviços de alta qualidade no seu próprio local. Na
-                Bom Doza, estamos comprometidos em fornecer soluções práticas
-                para atender às suas necessidades de forma eficiente e
-                profissional.
+                receber serviços de alta qualidade no seu próprio local. Na Bom
+                Doza, estamos comprometidos em fornecer soluções práticas para
+                atender às suas necessidades de forma eficiente e profissional.
               </p>
+              <PackagePrice PricingData={PricingData} />
               <div
                 className="relative z-10 mb-10 overflow-hidden rounded-md
                bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9"
