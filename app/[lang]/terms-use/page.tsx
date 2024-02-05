@@ -1,46 +1,13 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import { getDictionaryServerOnly } from "@/dictionaries/dictionary-server-only";
 
-const Conduct = () => {
-  const TermUse = [
+const Conduct = ({ params: { lang } }) => {
 
-    {
-      title: "1. Uso dos Serviços",
-      desc: "Você concorda em utilizar os serviços da Bom Doza de acordo com as leis e regulamentações locais. A Bom Doza reserva-se o direito de recusar serviços a qualquer pessoa por qualquer motivo a qualquer momento.",
-    },
-    {
-      title: "2. Responsabilidades do Usuário",
-      desc: "Ao utilizar nossos serviços, você concorda em fornecer informações precisas e atualizadas. Você é responsável por manter a confidencialidade de qualquer informação de login associada à sua conta.",
-    },
-    {
-      title: "3. Conteúdo do Usuário",
-      desc: "Ao fornecer conteúdo através de nossos serviços, você concede à Bom Doza uma licença mundial, não exclusiva, isenta de royalties, para usar, exibir e distribuir esse conteúdo de acordo com as configurações de privacidade que você escolher.",
-    },
-    {
-      title: "4. Interrupção ou Modificação dos Serviços",
-      desc: "A Bom Doza reserva-se o direito de interromper ou modificar seus serviços a qualquer momento, por qualquer motivo, com ou sem aviso prévio. Não nos responsabilizamos por qualquer interrupção ou modificação dos serviços.",
-    },
-    {
-      title: "5. Privacidade",
-      desc: "A política de privacidade da Bom Doza descreve como suas informações pessoais são coletadas, utilizadas e compartilhadas. Ao utilizar nossos serviços, você concorda com a coleta e uso de suas informações de acordo com nossa política de privacidade.",
-    },
-    {
-      title: "6. Limitação de Responsabilidade",
-      desc: "A Bom Doza não se responsabiliza por danos diretos, indiretos, incidentais, especiais, consequenciais ou punitivos resultantes do uso ou incapacidade de usar nossos serviços.",
-    },
-    {
-      title: "7. Alterações nos Termos de Uso",
-      desc: "A Bom Doza reserva-se o direito de atualizar ou modificar estes Termos de Uso a qualquer momento. As alterações serão comunicadas aos usuários através dos meios apropriados. O uso contínuo dos nossos serviços após qualquer alteração nos Termos de Uso constituirá aceitação dessas alterações.",
-    },
-    {
-      title: "8. Contato",
-      desc: "Para dúvidas, reclamações ou informações adicionais sobre estes Termos de Uso, entre em contato conosco através dos meios de comunicação disponíveis em nosso site.",
-    },
-  ];
-
+  const { dictionary } = getDictionaryServerOnly(lang);
 
   return (
     <>
-      <Breadcrumb pageName="Termos de Serviços" description="" />
+      <Breadcrumb pageName={dictionary.termsUse.title} description="" />
       <section className="pb-[50px] pt-[25px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
@@ -48,12 +15,9 @@ const Conduct = () => {
               <div>
                 <div>
                   <p className="mb-10 text-justify text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Ao acessar e utilizar os serviços oferecidos pela BomDoza,
-                    você concorda com os seguintes termos de uso. Leia
-                    atentamente este documento antes de continuar a utilizar
-                    nossos serviços.
+                    {dictionary.termsUse.descripition}
                   </p>
-                  {TermUse.map((item, index) => (
+                  {dictionary.termsUse.TermUse.map((item, index) => (
                     <div key={index}>
                       <h3
                         className="font-xl mb-5 font-bold leading-tight text-black
@@ -73,10 +37,7 @@ const Conduct = () => {
                   ))}
                   <div className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
                     <p className="text-center text-base font-medium italic text-body-color">
-                      Ao utilizar os serviços da Bom Doza, você concorda em
-                      cumprir estes Termos de Serviço. Agradecemos pela escolha
-                      dos nossos serviços e estamos comprometidos em
-                      proporcionar uma experiência de qualidade.
+                     {dictionary.termsUse.textEnd}
                     </p>
                     <span className="absolute left-0 top-0 z-[-1]">
                       <svg

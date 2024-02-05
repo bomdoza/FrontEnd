@@ -1,40 +1,13 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import { getDictionaryServerOnly } from "@/dictionaries/dictionary-server-only";
 
-const Conduct = () => {
-  const Term = [
-    {
-      title: "Descrição dos Serviços",
-      desc: "A Bom Doza oferece uma variedade de serviços de lavagem e cuidados, incluindo, mas não se limitando a, lavagem de carros, lavagem de móveis, restauro de plásticos, lavagem de tanques, entre outros. Os detalhes específicos de cada serviço estão disponíveis em nosso site e podem estar sujeitos a atualizações periódicas.",
-    },
-    {
-      title: "Agendamento e Cancelamento",
-      desc: "O agendamento de serviços pode ser realizado através do nosso site, aplicativo móvel ou por contato direto com a nossa equipe. O cancelamento de serviços agendados está sujeito a políticas específicas, as quais podem variar conforme o tipo de serviço. Informações detalhadas sobre políticas de agendamento e cancelamento estão disponíveis mediante solicitação.",
-    },
-    {
-      title: "Pagamentos e Faturamento",
-      desc: "Os pagamentos pelos serviços prestados pela Bom Doza podem ser realizados no momento da prestação do serviço ou conforme acordado previamente. Aceitamos métodos de pagamento específicos, detalhados em nossas informações de faturamento.",
-    },
-    {
-      title: "Responsabilidade e Garantia",
-      desc: "A Bom Doza compromete-se a fornecer serviços de alta qualidade, utilizando métodos e produtos adequados a cada necessidade. Garantimos a satisfação do cliente e estamos abertos a resolver quaisquer problemas que possam surgir durante ou após a prestação dos serviços.",
-    },
-    {
-      title: "Privacidade e Segurança",
-      desc: "Respeitamos a privacidade dos nossos clientes e garantimos que as informações fornecidas durante a prestação dos serviços serão tratadas com a máxima confidencialidade. Para obter mais informações sobre nossa política de privacidade, consulte a seção específica em nosso site.",
-    },
-    {
-      title: "Alterações nos Termos de Serviço",
-      desc: "A Bom Doza reserva-se o direito de atualizar ou modificar estes Termos de Serviço a qualquer momento. As alterações serão comunicadas aos clientes através dos meios apropriados. O uso contínuo dos nossos serviços após qualquer alteração nos Termos de Serviço constituirá aceitação dessas alterações.",
-    },
-    {
-      title: "Contato",
-      desc: "Para quaisquer dúvidas, reclamações ou informações adicionais, entre em contato conosco através dos meios de comunicação disponíveis em nosso site.\n\nAo utilizar os serviços da Bom Doza, você concorda em cumprir estes Termos de Serviço. Agradecemos pela escolha dos nossos serviços e estamos comprometidos em proporcionar uma experiência de qualidade.",
-    },
-  ];
+const Conduct = ({ params: { lang } }) => {
+
+  const { dictionary } = getDictionaryServerOnly(lang);
 
   return (
     <>
-      <Breadcrumb pageName="Termos de Serviços" description="" />
+      <Breadcrumb pageName={dictionary.termsServices.title} description="" />
       <section className="pb-[50px] pt-[25px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
@@ -42,12 +15,9 @@ const Conduct = () => {
               <div>
                 <div>
                   <p className="mb-10 text-justify text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Ao utilizar os serviços prestados pela Bom Doza, você
-                    concorda com os seguintes termos e condições. Recomendamos a
-                    leitura cuidadosa deste documento antes de utilizar nossos
-                    serviços.
+                    {dictionary.termsServices.descripition}
                   </p>
-                  {Term.map((item, index) => (
+                  {dictionary.termsServices.Term.map((item, index) => (
                     <div key={index}>
                       <h3
                         className="font-xl mb-5 font-bold leading-tight text-black
@@ -67,10 +37,7 @@ const Conduct = () => {
                   ))}
                   <div className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
                     <p className="text-center text-base font-medium italic text-body-color">
-                      Ao utilizar os serviços da Bom Doza, você concorda em
-                      cumprir estes Termos de Serviço. Agradecemos pela escolha
-                      dos nossos serviços e estamos comprometidos em
-                      proporcionar uma experiência de qualidade.
+                      {dictionary.termsServices.textEnd}
                     </p>
                     <span className="absolute left-0 top-0 z-[-1]">
                       <svg

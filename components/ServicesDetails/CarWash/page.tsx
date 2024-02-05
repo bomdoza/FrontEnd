@@ -1,26 +1,10 @@
 import Image from "next/image";
 import PackagePrice from "../packagePrice";
-import PricingData from "../PricingDataCar";
-const CarWashDetails = () => {
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-   const services = [
-     { type: "Lavagem externa da carroceria, limpeza de vidros e secagem;" },
-     { type: "Limpeza de rodas, pneus e detalhes do interior;" },
-     { type: "Limpeza com vapor para remover sujeira e manchas difíceis;" },
-     {
-       type: "Limpeza profunda do compartimento do motor para remover acúmulos de sujeira e graxa;",
-     },
-     {
-       type: "Limpeza para tapetes, bancos, forros e  remoção manchas e odores;",
-     },
-     {
-       type: "Serviços adaptados para veículos específicos, como caminhões, vans ou veículos de luxo.",
-     },
-     { type: "Bom Doza configurção de GPS" },
-     {
-       type: "Restauro de Plásticos, recupere a Beleza Original dos Seus Componentes Plásticos",
-     },
-   ];
+const CarWashDetails = ({lang}) => {
+
+     const { dictionary } = getDictionaryUseClient(lang);
 
   return (
     <>
@@ -31,7 +15,7 @@ const CarWashDetails = () => {
               className="text-center text-2xl font-bold leading-tight
              text-black dark:text-white sm:text-4xl sm:leading-tight md:text-3xl"
             >
-              Lavagem de Carros
+              {dictionary.service.CarWash.title}
             </h2>
             <div
               className=" mb-3 flex flex-wrap items-center justify-between
@@ -49,56 +33,41 @@ const CarWashDetails = () => {
                   />
                 </div>
               </div>
-              <p
-                className="mb-5 text-justify text-base font-medium leading-relaxed 
-              text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed
-                xl:text-lg xl:leading-relaxed"
-              >
-                Na Bom Doza, entendemos que o seu veículo merece mais do que uma
-                simples lavagem. Oferecemos serviços de lavagem de carros que
-                vão além da superfície que proporciona cuidados meticulosos para
-                manter o seu automóvel em sua melhor condição.
-              </p>
-              <p
-                className="mb-5 text-justify text-base  font-medium leading-relaxed 
-              text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed
-                xl:text-lg xl:leading-relaxed"
-              >
-                Nossa equipe altamente qualificada utiliza técnicas avançadas e
-                produtos de alta qualidade para garantir uma limpeza eficaz e
-                duradoura. Desde a remoção de sujeira superficial até a atenção
-                aos detalhes no interior, estamos comprometidos em oferecer
-                resultados excepcionais.
-              </p>
+              {dictionary.service.CarWash.description.map(
+                (descriptions, index) => (
+                  <p
+                    key={index}
+                    className="mb-5 text-justify text-base font-medium leading-relaxed text-body-color 
+                    sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed"
+                  >
+                    {descriptions}
+                  </p>
+                ),
+              )}
               <h3
                 className="font-xl mb-5 font-bold leading-tight
                text-black dark:text-white sm:text-2xl sm:leading-tight
                 lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight"
               >
-                Tipos de lavagem de carros e serviços da BomDoza
+                {dictionary.service.CarWash.washType.title}
               </h3>
               <p
                 className="mb-5 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed lg:text-base
                lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
-                Na Bom Doza, cada carro é tratado com a máxima atenção. Nossa
-                lavagem detalhada inclui a limpeza minuciosa de todas as áreas,
-                desde a carroceria até os cantos mais difíceis de alcançar.
-                Utilizamos produtos que preservam a pintura e promovem um brilho
-                duradouro.
+                {dictionary.service.CarWash.washType.descripition}
               </p>
               <ul className="mb-5 list-inside list-disc text-body-color">
-                {services &&
-                  services.map((topico, indice) => (
-                    <li
-                      key={indice}
-                      className="mb-2 text-base font-medium text-body-color
+                {dictionary.service.CarWash.services.map((topico, indice) => (
+                  <li
+                    key={indice}
+                    className="mb-2 text-base font-medium text-body-color
                        sm:text-lg lg:text-base xl:text-lg"
-                    >
-                      {topico.type}
-                    </li>
-                  ))}
+                  >
+                    {topico.type}
+                  </li>
+                ))}
               </ul>
 
               <h3
@@ -106,50 +75,38 @@ const CarWashDetails = () => {
                dark:text-white sm:text-2xl sm:leading-tight lg:text-xl
                 lg:leading-tight xl:text-2xl xl:leading-tight"
               >
-                Lavagem de carros no conforto da sua casa ou empresa
+                {dictionary.service.CarWash.homeCleaning.title}
               </h3>
               <p
                 className="mb-5 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed lg:text-base
                 lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
-                Na Bom Doza, entendemos a importância da conveniência, e é por
-                isso que oferecemos o serviço de lavagem de carros diretamente
-                no local, seja na sua residência ou empresa. Com a nossa equipe
-                especializada e equipamento móvel de última geração,
-                proporcionamos uma solução de limpeza completa e eficiente, sem
-                que você precise sair do lugar.
+                {dictionary.service.CarWash.homeCleaning.descripition}
               </p>
               <h3
                 className="font-xl mb-5 font-bold leading-tight text-black
                dark:text-white sm:text-2xl sm:leading-tight lg:text-xl
                 lg:leading-tight xl:text-2xl xl:leading-tight"
               >
-                Agende a lavagem do seu carro sem sair de Casa:
+                {dictionary.service.CarWash.washingSchedule.title}
               </h3>
               <p
                 className="mb-5 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed lg:text-base
                lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
-                Não permita que a falta de tempo ou a logística impeçam você de
-                manter seu carro impecável. Agende agora a lavagem do seu carro
-                e desfrute da praticidade de receber serviços profissionais
-                diretamente onde você está. Na BomDoza, estamos comprometidos em
-                oferecer soluções de limpeza eficientes e personalizadas para
-                atender às suas necessidades.
+                {dictionary.service.CarWash.washingSchedule.descripition}
               </p>
-              <PackagePrice PricingData={PricingData} />
+              <PackagePrice
+                PricingData={dictionary.service.pricing.pricingCars}
+              />
               <div
                 className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary 
                 bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9"
               >
                 <p className="text-center text-base font-medium italic text-body-color">
-                  Na Bom Doza, comprometemo-nos a oferecer um serviço de lavagem
-                  de móveis que vai além das expectativas. Confie-nos para
-                  revitalizar seus móveis e criar um ambiente que você se
-                  orgulha de chamar de seu. Agende agora a lavagem do seus
-                  móveis!
+                  {dictionary.service.CarWash.textEnde}
                 </p>
                 <span className="absolute left-0 top-0 z-[-1]">
                   <svg
@@ -287,8 +244,6 @@ const CarWashDetails = () => {
                 </span>
               </div>
             </div>
-
-            
           </div>
         </div>
       </div>

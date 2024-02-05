@@ -1,8 +1,10 @@
 import Image from "next/image";
 import DivTitle from "../Common/DivTitle";
+import { getDictionaryServerOnly } from "@/dictionaries/dictionary-server-only";
 
+const AboutSectionOne = ({ lang }) => {
 
-const AboutSectionOne = () => {
+  const { dictionary } = getDictionaryServerOnly(lang);
 
   return (
     <section id="about">
@@ -11,15 +13,15 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <DivTitle
-                title="Missão"
-                paragraph="Nossa missão é transformar a rotina da lavagem em uma experiência extraordinária. Buscamos proporcionar não apenas limpeza, mas a renovação completa de carros, sofás, tapetes, tanques e diversos outros itens, utilizando técnicas avançadas e produtos de alta qualidade."
+                title={dictionary.abaut.AboutSectionOne.div1Title}
+                paragraph={dictionary.abaut.AboutSectionOne.div1Description}
                 mb="44px"
               />
 
               <div className="flex flex-wrap">
                 <DivTitle
-                  title="Sustentabilidade"
-                  paragraph="Além de buscar a excelência nos resultados, a BomDoza é comprometida com práticas sustentáveis. Procuramos minimizar nosso impacto ambiental, escolhendo produtos e métodos que respeitam o meio ambiente."
+                  title={dictionary.abaut.AboutSectionOne.div2Title}
+                  paragraph={dictionary.abaut.AboutSectionOne.div2Description}
                   mb="44px"
                 />
               </div>

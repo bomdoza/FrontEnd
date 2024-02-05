@@ -1,18 +1,18 @@
 "use client";
-
 import { useTheme } from "next-themes";
-import List from "./IconeList"
+import List from "./IconeList";
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-const NewsLatterBox = () => {
+const NewsLatterBox = ({ lang }) => {
+
+  const { dictionary } = getDictionaryUseClient(lang);
+
   const { theme } = useTheme();
 
+
+
   const phoneIcon = (
-    <svg
-      fill="currentColor"
-      viewBox="0 0 16 16"
-      height="1em"
-      width="1em"
-    >
+    <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
       <path
         fillRule="evenodd"
         d="M1.885.511a1.745 1.745 0 012.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 00.178.643l2.457 2.457a.678.678 0 00.644.178l2.189-.547a1.745 1.745 0 011.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 01-7.01-4.42 18.634 18.634 0 01-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
@@ -20,59 +20,51 @@ const NewsLatterBox = () => {
     </svg>
   );
   const houseIcon = (
-    <svg
-    fill="currentColor"
-    viewBox="0 0 16 16"
-    height="1em"
-    width="1em"
-  >
-    <path
-      fillRule="evenodd"
-      d="M8 3.293l6 6V13.5a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z"
-    />
-    <path
-      fillRule="evenodd"
-      d="M7.293 1.5a1 1 0 011.414 0l6.647 6.646a.5.5 0 01-.708.708L8 2.207 1.354 8.854a.5.5 0 11-.708-.708L7.293 1.5z"
-    />
-  </svg>
+    <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
+      <path
+        fillRule="evenodd"
+        d="M8 3.293l6 6V13.5a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z"
+      />
+      <path
+        fillRule="evenodd"
+        d="M7.293 1.5a1 1 0 011.414 0l6.647 6.646a.5.5 0 01-.708.708L8 2.207 1.354 8.854a.5.5 0 11-.708-.708L7.293 1.5z"
+      />
+    </svg>
   );
 
   const mailIcon = (
-    <svg
-      fill="currentColor"
-      viewBox="0 0 16 16"
-      height="1em"
-      width="1em"
-    >
+    <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
       <path d="M4 4a3 3 0 00-3 3v6h6V7a3 3 0 00-3-3zm0-1h8a4 4 0 014 4v6a1 1 0 01-1 1H1a1 1 0 01-1-1V7a4 4 0 014-4zm2.646 1A3.99 3.99 0 018 7v6h7V7a3 3 0 00-3-3H6.646z" />
       <path d="M11.793 8.5H9v-1h5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 012 0z" />
     </svg>
   );
 
- 
+    const iconComponents = {
+      houseIcon: houseIcon,
+      phoneIcon: phoneIcon,
+      mailIcon: mailIcon,
+  };
+  const mappedData = dictionary.contact.sideBarListAdress.map((item, index) => {
+    const IconComponent = iconComponents[item.icon];
+    return  <List key={index} text={item.name} icon={IconComponent} />;
+  });
+  
   return (
     <div
-      className="wow fadeInUp relative mb-12 lg:h-full z-10 rounded-sm bg-white shadow-three dark:bg-gray-dark p-4 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+      className="wow fadeInUp relative z-10 mb-12 rounded-sm bg-white p-4 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:h-full lg:px-8 xl:p-[55px]"
       data-wow-delay=".2s"
     >
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white ">
-        Informações de Contacto
+        {dictionary.contact.sideBarTitle}
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Nos contacte e obtenha os nossos Serviços
+        {dictionary.contact.sideBarDescripition}
       </p>
-      <div className="w-full px-2">
-          <List text="Endereço: palmarejo, Praia" icon={houseIcon} />
-          <List text="Swag: 5 99 99 99" icon={phoneIcon}/>
-          <List text="Play: 955 55 55" icon={phoneIcon} />
-          <List text="Bomdoza@gmail.com" icon={mailIcon} />  
-      </div>
+      <div className="w-full px-2">{mappedData}</div>
 
       <div>
-
-
         <span className="absolute bottom-20 left-1.5">
-        <svg
+          <svg
             width="40"
             height="40"
             viewBox="0 0 38 38"
@@ -105,7 +97,7 @@ const NewsLatterBox = () => {
               </linearGradient>
             </defs>
           </svg>
-        </span> 
+        </span>
 
         <span className="absolute right-0 top-0">
           <svg

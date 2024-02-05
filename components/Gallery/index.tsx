@@ -1,18 +1,34 @@
 "use client"
 import React, { useState } from 'react';
+import Image from 'next/image';
 
-const Gallery = ({ images }) => {
+const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+   const images = [
+     "/images/service/car/lavagemdecarro.jpg",
+     "/images/service/car/pexels.jpg",
+     "/images/service/car/lava.jpg",
+     "/images/service/furniture/tapete1.jpeg",
+     "/images/service/furniture/sofa3.jpg",
+     "/images/service/furniture/sofa1.png",
+     "/images/service/tank/tanque.jpg",
+     "/images/service/tank/tanque1.png",
+   ];
+
   return (
-    <div id='gallery' className="container mx-auto my-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+    <div id="gallery" className="container mx-auto my-8">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
         {images.map((image, index) => (
-          <img
+          <Image
             key={index}
             src={image}
             alt={`Image ${index + 1}`}
-            className={`w-full h-auto rounded-lg transition-transform transform ${hoveredIndex === index ? 'scale-110' : ''}`}
+            width={300}
+            height={200}
+            className={`h-auto w-full transform rounded-lg transition-transform ${
+              hoveredIndex === index ? "scale-110" : ""
+            }`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           />

@@ -1,6 +1,5 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleBlog from "./SingleBlog";
-import blogData from "./blogData";
 
 import { getDictionaryServerOnly } from "@/dictionaries/dictionary-server-only";
 

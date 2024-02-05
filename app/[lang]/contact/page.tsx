@@ -1,20 +1,18 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Contact from "@/components/Contact";
+import { getDictionaryServerOnly } from "@/dictionaries/dictionary-server-only";
 
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Bom Doza-Contacto",
-};
-
-const ContactPage = () => {
+const ContactPage = ({ params: { lang } }) => {
+  
+  const { dictionary } = getDictionaryServerOnly(lang);
+  
   return (
     <>
-        <Breadcrumb
-        pageName="Contacto"
-        description="Estamos aqui para tornar o processo de contato tão fácil quanto a limpeza que oferecemos. Não hesite em nos chamar para descobrir como podemos transformar seus pertences com cuidado e qualidade. Estamos ansiosos para ouvir de você!"
-        />
-      <Contact />
+      <Breadcrumb
+        pageName={dictionary.contact.title}
+        description={dictionary.contact.descripition}
+      />
+      <Contact lang={lang} />
     </>
   );
 };

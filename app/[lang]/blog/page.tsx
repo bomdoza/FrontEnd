@@ -3,12 +3,13 @@ import RelatedPost from "@/components/Blog/RelatedPost";
 import BlogSearch from "@/components/Blog/BlogSearch";
 import TagButton from "@/components/Blog/TagButton";
 import SingleBlog from "@/components/Blog/SingleBlog";
-import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
 const BlogSidebarPage = ({ params: { lang } }) => {
+
   const { dictionary } = getDictionaryUseClient(lang);
+  
   const uniqueTags = Array.from(
     new Set(dictionary.blog.BlogPost.flatMap((blog) => blog.tags)),
   );
@@ -66,7 +67,7 @@ const BlogSidebarPage = ({ params: { lang } }) => {
                 </h3>
                 <div className="flex flex-wrap px-8 py-6">
                   {uniqueTags.map((tag, index) => (
-                    <TagButton key={index} text={tag} />
+                    <TagButton key={index} text={tag as string} />
                   ))}
                 </div>
               </div>

@@ -1,25 +1,10 @@
 import Image from "next/image";
 import PackagePrice from "../packagePrice";
-import PricingData from "../PricingDataFurniture";
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-const FurnitureWashingDetails = () => {
-  const services = [
-    {
-      type: "Limpeza avançadas para garantir uma limpeza profunda sem danificar os materiais sensíveis dos seus móveis;",
-    },
-    {
-      type: "Remoção eficaz de manchas, odores indesejados e sujeira acumulada ao longo do tempo;",
-    },
-    {
-      type: "Trabalhamos com uma variedade de materiais, incluindo tecidos, couro, madeira e outros, adaptando a nossa abordagem para cada tipo de superfície;",
-    },
-    {
-      type: "Limpeza para tapetes;",
-    },
-    {
-      type: "Cada peça de mobiliário é única, e o nosso atendimento é personalizado para atender às necessidades específicas de cada cliente",
-    },
-  ];
+const FurnitureWashingDetails = ({ lang }) => {
+
+  const { dictionary } = getDictionaryUseClient(lang);
 
   return (
     <>
@@ -30,7 +15,7 @@ const FurnitureWashingDetails = () => {
               className="text-center text-2xl font-bold leading-tight text-black
              dark:text-white sm:text-4xl sm:leading-tight md:text-3xl"
             >
-              Lavagem de Mobílias
+              {dictionary.service.FurnitureWashing.title}
             </h2>
             <div
               className=" mb-3 flex flex-wrap items-center justify-between border-b
@@ -47,101 +32,75 @@ const FurnitureWashingDetails = () => {
                   />
                 </div>
               </div>
-              <p
-                className="mb-5 text-justify text-base font-medium leading-relaxed 
-              text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed
-                xl:text-lg xl:leading-relaxed"
-              >
-                Na Bom Doza, entendemos que os seus móveis são mais do que
-                simples peças de decoração - são parte integrante do seu espaço
-                e refletem o seu estilo de vida. Apresentamos o nosso serviço
-                especializado de Lavagem de Móveis, criado para renovar e
-                revitalizar os seus estofados, tapetes e peças de mobiliário.
-              </p>
-              <p
-                className="mb-5 text-justify text-base  font-medium leading-relaxed 
-              text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed
-                xl:text-lg xl:leading-relaxed"
-              >
-                Nossa equipe altamente qualificada utiliza técnicas avançadas e
-                produtos de alta qualidade para garantir uma limpeza eficaz e
-                duradoura. Desde a remoção de sujeira superficial até a atenção
-                aos detalhes, estamos comprometidos em oferecer resultados
-                excepcionais.
-              </p>
+              {dictionary.service.FurnitureWashing.description.map(
+                (descriptions, index) => (
+                  <p
+                    key={index}
+                    className="mb-5 text-justify text-base font-medium leading-relaxed text-body-color 
+                    sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed"
+                  >
+                    {descriptions}
+                  </p>
+                ),
+              )}
               <h3
                 className="font-xl mb-5 font-bold leading-tight text-black
                dark:text-white sm:text-2xl sm:leading-tight lg:text-xl
                lg:leading-tight xl:text-2xl xl:leading-tight"
               >
-                Tipos de lavagem de mobílias da Bom Doza
+                {dictionary.service.FurnitureWashing.washType.title}
               </h3>
               <p
                 className="mb-10 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed lg:text-base
                lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
-                Na Bom Doza, comprometemo-nos a oferecer um serviço de lavagem
-                de móveis que vai além das expectativas. Confie-nos para
-                revitalizar seus móveis e criar um ambiente que você se orgulha
-                de chamar de seu.
+                {dictionary.service.FurnitureWashing.washType.descripition}
               </p>
               <ul className="mb-5 list-inside list-disc text-body-color">
-                {services &&
-                  services.map((topico, indice) => (
+                {dictionary.service.FurnitureWashing.services.map(
+                  (topico, indice) => (
                     <li
                       key={indice}
                       className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg"
                     >
                       {topico.type}
                     </li>
-                  ))}
+                  ),
+                )}
               </ul>
               <h3
                 className="font-xl mb-5 font-bold leading-tight text-black
                dark:text-white sm:text-2xl sm:leading-tight lg:text-xl
                lg:leading-tight xl:text-2xl xl:leading-tight"
               >
-                Lavagem de móveis no conforto da sua casa ou empresa
+                {dictionary.service.FurnitureWashing.homeCleaning.title}
               </h3>
               <p
                 className="mb-10 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed lg:text-base
                lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
-                Na Bom Doza, estamos comprometidos em levar a excelência dos
-                nossos serviços diretamente até você. Oferecemos o serviço de
-                lavagem de móveis a domicílio, proporcionando a conveniência de
-                revitalizar seus estofados e peças de mobiliário no conforto da
-                sua casa ou empresa.
+                {dictionary.service.FurnitureWashing.homeCleaning.descripition}
               </p>
               <h3
                 className="font-xl mb-5 font-bold leading-tight text-black
                dark:text-white sm:text-2xl sm:leading-tight lg:text-xl
                lg:leading-tight xl:text-2xl xl:leading-tight"
               >
-                Agende a lavagem dos seus móveis sem sair de casa:
+                {dictionary.service.FurnitureWashing.washingSchedule.title}
               </h3>
               <p
                 className="mb-10 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed lg:text-base
                lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
-                Não permita que a manutenção dos seus móveis seja uma tarefa
-                complicada. Agende agora a lavagem dos seus móveis e desfrute da
-                praticidade de receber serviços profissionais diretamente onde
-                você está. Na Bom Doza, estamos comprometidos em oferecer
-                soluções de limpeza eficientes e adaptáveis às suas necessidades
-                e preferências.
+                {dictionary.service.FurnitureWashing.washingSchedule.descripition}
               </p>
-              <PackagePrice PricingData={PricingData} />
+              <PackagePrice PricingData={dictionary.service.pricing.pricingFurniture} />
               <div className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
                 <p className="text-center text-base font-medium italic text-body-color">
-                  Escolha o tipo de lavagem que melhor atende às necessidades do
-                  seu veículo. Na Bom Doza, oferecemos uma variedade de opções
-                  para garantir que seu carro receba o cuidado específico que
-                  merece. Agende agora a lavagem do seu carro e experimente a
-                  excelência em cuidados automotivos!
+                  {dictionary.service.FurnitureWashing.textEnde}
                 </p>
                 <span className="absolute left-0 top-0 z-[-1]">
                   <svg

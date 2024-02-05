@@ -1,23 +1,10 @@
 import Image from "next/image";
 import PackagePrice from "../packagePrice";
-import PricingData from "../PricingDataTank";
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-const TankWashing = () => {
-  const services = [
-    {
-      type: "Serviços adicionais de proteção anti-corrosão para prolongar a vida útil dos tanques;",
-    },
-    {
-      type: "Limpeza especializados para eliminar qualquer contaminação microbiológica;",
-    },
-    { type: "Limpeza com vapor para remover sujeira e manchas difíceis;" },
-    {
-      type: "Limpeza profunda do compartimento do motor para remover acúmulos de sujeira e graxa;",
-    },
-    {
-      type: "Limpeza profunda, removendo sedimentos, resíduos e impurezas acumuladas nos tanques",
-    },
-  ];
+const TankWashing = ({ lang }) => {
+
+  const { dictionary } = getDictionaryUseClient(lang);
 
   return (
     <>
@@ -25,7 +12,7 @@ const TankWashing = () => {
         <div className="w-full">
           <div>
             <h2 className="text-center text-2xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-3xl">
-              Lavagem de Tanques
+              {dictionary.service.TankWashing.title}
             </h2>
             <div className=" mb-3 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-2 dark:border-white dark:border-opacity-10"></div>
             <div>
@@ -39,91 +26,66 @@ const TankWashing = () => {
                   />
                 </div>
               </div>
-              <p
-                className="mb-5 text-justify text-base font-medium leading-relaxed 
-              text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed
-                xl:text-lg xl:leading-relaxed"
-              >
-                Na Bom Doza, reconhecemos a importância de manter os tanques em
-                condições ideais para garantir a qualidade e eficiência dos
-                líquidos que armazenam. Apresentamos nosso serviço especializado
-                de Lavagem de Tanques, dedicado a preservar a pureza e
-                funcionalidade dos seus reservatórios.
-              </p>
-              <p
-                className="mb-5 text-justify text-base  font-medium leading-relaxed 
-              text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed
-                xl:text-lg xl:leading-relaxed"
-              >
-                Nossa equipe altamente qualificada utiliza técnicas avançadas e
-                produtos de alta qualidade para garantir uma limpeza eficaz e
-                duradoura. Desde a remoção de sujeira superficial até a atenção
-                aos detalhes no interior, estamos comprometidos em oferecer
-                resultados excepcionais.
-              </p>
+              {dictionary.service.TankWashing.description.map(
+                (descriptions, index) => (
+                  <p
+                    key={index}
+                    className="mb-5 text-justify text-base font-medium leading-relaxed text-body-color 
+                    sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed"
+                  >
+                    {descriptions}
+                  </p>
+                ),
+              )}
               <h3 className="font-xl mb-5 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                Tipos de lavagem de tanques e serviços da Bom Doza
+                {dictionary.service.TankWashing.washType.title}
               </h3>
               <p
                 className="mb-5 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed 
                 lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
-                Não comprometa a qualidade dos seus processos ou a segurança dos
-                seus líquidos. Agende agora a lavagem dos seus tanques e
-                experimente o compromisso da Bom Doza em fornecer serviços
-                excepcionais para manter seus sistemas em perfeito funcionamento
+                {dictionary.service.TankWashing.washType.descripition}
               </p>
               <ul className="mb-5 list-inside list-disc text-body-color">
-                {services &&
-                  services.map((topico, indice) => (
+                {dictionary.service.TankWashing.services.map(
+                  (topico, indice) => (
                     <li
                       key={indice}
                       className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg"
                     >
                       {topico.type}
                     </li>
-                  ))}
+                  ),
+                )}
               </ul>
               <h3 className="font-xl mb-5 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                Lavagem de tanques no conforto da sua casa ou empresa
+                {dictionary.service.TankWashing.homeCleaning.title}
               </h3>
               <p
                 className="mb-5 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed 
                 lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
-                A Bom Doza entende a importância da conveniência, e é por isso
-                que oferecemos o serviço de lavagem de tanques diretamente no
-                local, seja na sua residência ou empresa. Com a nossa equipe
-                especializada e equipamento móvel de última geração,
-                proporcionamos uma solução eficiente e sem complicações para a
-                manutenção dos seus tanques.
+                {dictionary.service.TankWashing.homeCleaning.descripition}
               </p>
               <h3 className="font-xl mb-5 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                Agende a lavagem dos seus tanques sem sair de casa:
+                {dictionary.service.TankWashing.washingSchedule.title}
               </h3>
               <p
                 className="mb-5 text-justify text-base font-medium leading-relaxed
                text-body-color sm:text-lg sm:leading-relaxed 
                 lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed"
               >
-                Não deixe a manutenção dos seus tanques para depois. Agende
-                agora a lavagem dos seus tanques e aproveite a conveniência de
-                receber serviços de alta qualidade no seu próprio local. Na Bom
-                Doza, estamos comprometidos em fornecer soluções práticas para
-                atender às suas necessidades de forma eficiente e profissional.
+                {dictionary.service.TankWashing.washingSchedule.descripition}
               </p>
-              <PackagePrice PricingData={PricingData} />
+              <PackagePrice PricingData={dictionary.service.pricing.pricingTank} />
               <div
                 className="relative z-10 mb-10 overflow-hidden rounded-md
                bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9"
               >
                 <p className="text-center text-base font-medium italic text-body-color">
-                  Na Bom Doza, comprometemo-nos a fornecer um serviço de lavagem
-                  de tanques que atenda às necessidades específicas dos nossos
-                  clientes. Agende agora a lavagem dos seus tanques e assegure a
-                  integridade dos seus líquidos armazenados.
+                  {dictionary.service.TankWashing.textEnde}
                 </p>
                 <span className="absolute left-0 top-0 z-[-1]">
                   <svg

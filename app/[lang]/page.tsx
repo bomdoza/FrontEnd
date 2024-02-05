@@ -1,6 +1,6 @@
 import ScrollUp from "@/components/Common/ScrollUp";
 import HomeSlider from "@/components/HomeSlider";
-import Gallery from './galeria/page';
+import Gallery from "@/components/Gallery";
 import AboutSectionThree from "@/components/About/AboutSectionThree";
 import Testimonials from "@/components/Testimonials/index";
 import Blog from "@/components/Blog";

@@ -6,24 +6,23 @@ import CarWashContent from "@/components/ServicesDetails/CarWash/page";
 import FurnitureWashingContent from "@/components/ServicesDetails/FurnitureWashing/page";
 import TankWashingContent from "@/components/ServicesDetails/TankWashing/page";
 
-const ServiceType = () => {
+const ServiceType = ({ params: { lang } }) => {
 
-  const router = useRouter()
+  const router = useRouter();
   const pathname = usePathname();
   const match = pathname.match(/\/service\/(.+)/);
   const type = match ? match[1] : null;
 
   const renderContent = () => {
-    
     switch (type) {
       case "Car-Wash":
-        return <CarWashContent />;
+        return <CarWashContent lang={lang}/>;
       case "Furniture-Washing":
-         return <FurnitureWashingContent />;
+        return <FurnitureWashingContent lang={lang} />;
       case "Tank-Washing":
-         return <TankWashingContent />;
+        return <TankWashingContent lang={lang} />;
       default:
-        router.push('/404');
+        router.push("/404");
         return null;
     }
   };
@@ -34,7 +33,7 @@ const ServiceType = () => {
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
             <div className="mb-3 w-full px-2 lg:w-1/4">
-              <SideBar />
+              <SideBar lang={lang} />
             </div>
 
             <div className="w-full px-2 lg:w-3/4">

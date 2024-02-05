@@ -1,28 +1,19 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCar, faChair, faWater } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Link from "next/link";
-import { usePathname} from "next/navigation";
+import { usePathname } from "next/navigation";
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-const SideBar = () => {
+const SideBar = ({ lang }) => {
+
+  
+  const { dictionary } = getDictionaryUseClient(lang);
   
   const pathname = usePathname();
   const match = pathname.match(/\/service\/(.+)/);
   const type = match ? `/service/${match[1]}` : null;
-
-  const services = [
-    { title: "Lavagem de Carros", icon: faCar, url: "/service/Car-Wash" },
-    {
-      title: "Lavagem de Mobílias",
-      icon: faChair,
-      url: "/service/Furniture-Washing",
-    },
-    {
-      title: "Lavagem de Tanques",
-      icon: faWater,
-      url: "/service/Tank-Washing",
-    },
-  ];
 
   return (
     <>
@@ -32,7 +23,7 @@ const SideBar = () => {
       transition-all dark:border-dark dark:bg-gray-dark "
       >
         <ul className="space-y-2">
-          {services.map((service, index) => (
+          {dictionary.service.sideBar.map((service, index) => (
             <li
               key={index}
               className={`block ${
@@ -46,7 +37,10 @@ const SideBar = () => {
               >
                 {service.icon && (
                   <span className="mr-2">
-                    <FontAwesomeIcon className="h-6 w-6" icon={service.icon} />
+                    <FontAwesomeIcon
+                      className="h-6 w-6"
+                      icon={getFontAwesomeIcon(service.icon)}
+                    />
                   </span>
                 )}
                 {service.title}
@@ -63,19 +57,19 @@ const SideBar = () => {
       >
         <div className="py-8">
           <h1 className="mb-2 text-center text-[20px] font-bold leading-tight text-black dark:text-white">
-            Quer fazer uma lavagem profissional completa?
+            {dictionary.service.sideBarContact.title}
           </h1>
           <p className="mb-2 text-center font-bold">
-            Ligue para Bom Doza ou entre em contato
+           {dictionary.service.sideBarContact.description}
           </p>
-          <h1 className="text-center text-[20px] font-bold">99998999</h1>
+          <h1 className="text-center text-[20px] font-bold">{dictionary.service.sideBarContact.number}</h1>
         </div>
         <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
           <Link
             href="/contact"
             className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
           >
-            Contacte-nos
+            {dictionary.service.sideBarContact.button}
           </Link>
         </div>
       </div>
@@ -83,3 +77,17 @@ const SideBar = () => {
   );
 };
 export default SideBar;
+
+
+function getFontAwesomeIcon(iconName: string): IconProp {
+  switch (iconName) {
+    case "faCar":
+      return faCar;
+    case "faChair":
+      return faChair;
+    case "faWater":
+      return faWater;
+    default:
+      return null;
+  }
+}

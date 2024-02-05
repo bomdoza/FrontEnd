@@ -1,5 +1,4 @@
 import SectionTitle from "../Common/SectionTitle";
-import ServiceData from "./serviceData";
 import CardSevice from "./cardSevice";
 import { getDictionaryServerOnly } from "@/dictionaries/dictionary-server-only";
 

@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { getDictionaryServerOnly } from "@/dictionaries/dictionary-server-only";
 
-const AboutSectionTwo = () => {
+const AboutSectionTwo = ({ lang }) => {
+
+  const { dictionary } = getDictionaryServerOnly(lang);
 
   return (
     <section className="py-12 md:py-14 lg:py-16">
@@ -23,28 +26,19 @@ const AboutSectionTwo = () => {
             <div className="wow fadeInUp w-full" data-wow-delay=".2s">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl md:text-[28px] lg:text-xl xl:text-2xl">
-                  Como Funciona?
+                  {dictionary.abaut.AboutSectionTwo.div1Title}
                 </h3>
                 <p className="text-justify text-base font-medium leading-relaxed text-body-color sm:leading-relaxed md:text-xl lg:text-base xl:text-xl">
-                  A BomDoza oferece uma gama de serviços de qualidade. Não se
-                  trata apenas de lavagem, é sobre restaurar, rejuvenescer e
-                  elevar a experiência de cuidado com seus pertences. Escolha a
-                  qualidade, escolha a dedicação, escolha a BomDoza para
-                  transformar a limpeza em uma experiência excepcional.
+                  {dictionary.abaut.AboutSectionTwo.div1Description}
                 </p>
               </div>
 
               <div className="my-5">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl md:text-[28px] lg:text-xl xl:text-2xl">
-                  Equipe Especializada
+                  {dictionary.abaut.AboutSectionTwo.div2Title}
                 </h3>
                 <p className="text-justify text-base font-medium leading-relaxed text-body-color sm:leading-relaxed md:text-xl lg:text-base xl:text-xl">
-                  Contamos com uma equipe altamente qualificada e dedicada,
-                  apaixonada por oferecer soluções personalizadas para atender
-                  às necessidades específicas de cada cliente. Nossa equipe é
-                  treinada nas técnicas mais recentes de limpeza e está
-                  comprometida em garantir que cada item receba o tratamento que
-                  merece.
+                    {dictionary.abaut.AboutSectionTwo.div2Description}
                 </p>
               </div>
             </div>

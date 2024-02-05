@@ -5,11 +5,12 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
-import blogData from "@/components/Blog/blogData";
 import BreadcrumbBack from "@/components/Common/BreadcrumbBack";
-
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
 const BlogDetailsPage = ({ params }) => {
+
+  const { dictionary } = getDictionaryUseClient(params.lang);
 
   const router = useRouter();
   const [selectedBlog, setSelectedBlog] = useState(null);
@@ -18,7 +19,9 @@ const BlogDetailsPage = ({ params }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await blogData.find((blog) => blog.id == id);
+        const data = await dictionary.blog.BlogPost.find(
+          (blog) => blog.id == id,
+        );
         if (!data) {
           router.push("/404");
         }
@@ -28,12 +31,12 @@ const BlogDetailsPage = ({ params }) => {
       }
     };
     fetchData();
-  }, [id]);
+  }, [id, router, dictionary.blog.BlogPost]);
 
   const postUrl = typeof window !== "undefined" ? window.location.href : "";
 
   const popularTags = Array.from(
-    new Set(blogData.flatMap((blog) => blog.tags)),
+    new Set(dictionary.blog.BlogPost.flatMap((blog) => blog.tags)),
   );
 
   return (
