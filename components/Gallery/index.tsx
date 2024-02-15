@@ -4,9 +4,8 @@ import Image from 'next/image';
 import SectionTitle from "../Common/SectionTitle";
 import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-const Gallery = ({ lang }) => {
-
-  const {dictionary} = getDictionaryUseClient(lang);
+const Gallery = ({lang}) => {
+  const { dictionary } = getDictionaryUseClient(lang);
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const images = [
@@ -22,7 +21,6 @@ const Gallery = ({ lang }) => {
 
   return (
     <>
-
       <div id="gallery" className="container mx-auto my-8">
         <SectionTitle
           title={dictionary.home.galery.title}
