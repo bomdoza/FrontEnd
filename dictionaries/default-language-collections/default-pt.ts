@@ -60,7 +60,7 @@ export const pt = {
 
   footer: {
     descripition:
-      "Transformando o comum em impecável, cuidando de carros, sofás, tapetes e mais com excelência!",
+      "Transformando o comum em impecável através da limpeza cuidadosa e de excelência",
     linkTitle1: "Links Úteis",
     linkTitle2: "Política de Privacidade",
     linkTitle3: "Redes Sociais",
@@ -79,27 +79,26 @@ export const pt = {
   },
 
   home: {
-    heroTitle: "O melhor serviço de lavagem",
-    heroDesc: "Lavagem profissional completo.",
+    heroTitle: "O Melhor Serviço de Lavagem",
+    heroDesc: "Lavagem Profissional Completa",
     heroSubDesc:
-      "Somos uma empresa especializada em proporcionar serviços de lavagem dos seus perteces de alta qualidade e eficiência.",
-    heroLabelButton: "Contacte-nos",
+      "Somos uma empresa de lavagem profissional de alta qualidade e eficiência.",
+    heroLabelButton: "Contacte-nos!",
 
     aboutSectionThree: {
-      title: "É hora de limpar seus pertences",
+      title: "É Hora de Limpar os seus Pertences",
       description:
-        "É hora de elevar o padrão de limpeza dos seus pertences! Na Bom Doza, dedicamos nossa expertise em transformar o comum em impecável. Seja o seu carro, sofá, tapete ou qualquer outro item, nossa equipe especializada está pronta para proporcionar uma limpeza excepcional.",
+        "Na Bom Doza dedicamos exclusivamente em levar até si toda expertise em lavagem com profissionais altamente qualificados em atender às suas necessidades. Oferecemos a si a lavagem geral do seu carro, sofá, tapete e todos os ítens necessários. Tudo isso, numa limpeza cuidadosa e excepcional. A nossa equipa está sempre pronta para atender ao seu pedido e por isso garantimos:",
       list: [
-        { text: "Somos um serviço profissional de lavagem" },
-        { text: "Usamos os melhores materiais de lavagem" },
-        { text: "Preocupamo-nos com a satisfação dos nossos clientes" },
+        { text: "Melhores técnicas de lavagem;" },
+        { text: "Adequação de melhores materiais e produtos;" },
+        { text: " Satisfação do cliente." },
       ],
     },
 
     service: {
-      title: "Nossos serviços",
-      description:
-        "Na Bom Doza, oferecemos uma gama abrangente de serviços especializados",
+      title: "Nossos Serviços",
+      description: "Na Bom Doza oferecemos uma variedade de serviços",
       ServiceItem: [
         {
           id: 1,
@@ -123,7 +122,7 @@ export const pt = {
     },
 
     testimonial: {
-      title: "O que os nossos clientes dizem",
+      title: "O que dizem os Nossos Clientes",
       descripition:
         "A satisfação dos nossos clientes é o melhor testemunho da nossa dedicação à excelência",
       testimonialPeople: [
@@ -158,33 +157,34 @@ export const pt = {
     },
 
     faq: {
-      title: "Perguntas frequentes",
-      descripition: "Tire as suas dúvidas sobre os servços Bom Doza",
+      title: "Perguntas Frequentes",
+      descripition:
+        "Tire as suas dúvidas sobre o que andam a perguntar sobre nós:",
       FaqItem: [
         {
           id: 1,
           question:
-            "O que torna a Bom Doza única no mercado de serviços de limpeza?",
+            "O que torna a Bom Doza única no mercado com os seus serviços de limpeza?",
           response:
             "A Bom Doza destaca-se pela sua abordagem inovadora, compromisso com a excelência e sustentabilidade, oferecendo serviços personalizados para atender às necessidades específicas de cada cliente.",
         },
         {
           id: 2,
           question:
-            "Quais são os principais serviços oferecidos pela Bom Doza?",
+            "Quais são os seus serviços e os mais procurados na empresa?",
           response:
             "Oferecemos uma ampla gama de serviços de limpeza, incluindo limpeza residencial, comercial, automotiva, limpeza de tapetes, sofás, tanques, entre outros.",
         },
         {
           id: 3,
-          question: "Como posso agendar um serviço de limpeza com a Bom Doza?",
+          question: "Como posso agendar um serviço e conhecer a Bom Doza?",
           response:
             "O agendamento pode ser feito através do nosso site, telefone ou e-mail. Basta entrar em contato conosco, e nossa equipa estará pronta para ajudar a marcar o serviço.",
         },
         {
           id: 4,
           question:
-            "A Bom Doza oferece serviços de limpeza personalizados para residências e empresas?",
+            "Oferecem serviços personalizados para residências e empresas?",
           response:
             "Sim, adaptamos nossos serviços para atender às necessidades específicas de cada cliente, seja em ambientes residenciais ou comerciais.",
         },
@@ -196,16 +196,19 @@ export const pt = {
         {
           id: 6,
           question:
-            "Quais são as medidas de segurança implementadas pela Bom Doza durante os serviços?",
+            "Quais as medidas de segurança adotadas pela Bom Doza durante a efetivação dosserviços?",
           response:
             "Implementamos rigorosas medidas de segurança para proteger tanto nossos clientes quanto nossa equipa, seguindo protocolos e normas de segurança.",
         },
       ],
     },
+    galery: {
+      title: "Nossa Galeria",
+    },
   },
 
   blog: {
-    titleHome: "Nossas últimas notícias",
+    titleHome: "Últimas notícias",
     descripitionHome: "Transformando o ordinário em impecável com a Bom Dosa",
     title: "Blog",
     descripition:
@@ -596,44 +599,41 @@ export const pt = {
     CarWash: {
       title: "Lavagem de Carros",
       description: [
-        "Na Bom Doza, entendemos que o seu veículo merece mais do que uma simples lavagem. Oferecemos serviços de lavagem de carros que vão além da superfície que proporciona cuidados meticulosos para manter o seu automóvel em sua melhor condição.",
-        "Nossa equipe altamente qualificada utiliza técnicas avançadas e produtos de alta qualidade para garantir uma limpeza eficaz e duradoura. Desde a remoção de sujeira superficial até a atenção aos detalhes no interior, estamos comprometidos em oferecer resultados excepcionais.",
+        "Na Bom Doza entendemos que o seu veículo merece muito mais do que uma simples lavagem. Por isso, oferecemos os nossos serviços de lavagem de carros que vão além da superfície proporcionando um cuidado detalhado a fim de garantir que o seu veículo esteja em um bom estado.",
+        "Nossa equipa altamente qualificada utiliza técnicas avançadas e produtos de qualidade garantindo uma limpeza eficaz e duradoura. Desde a remoção de sujeira superficial até aos detalhes do interior mantendo sempre o nosso compromisso com os resultados.",
       ],
       textEnde:
-        "Na Bom Doza, comprometemo-nos a oferecer um serviço de lavagem de móveis que vai além das expectativas. Confie-nos para revitalizar seus móveis e criar um ambiente que você se orgulha de chamar de seu. Agende agora a lavagem do seus móveis!",
+        "Na Bom Doza comprometemos em oferecer o melhor dos nossos serviços e elevar as suas expectativas. Confie em nós para revitalizar o seu veículo, móveis e ambiente. Agende agora a sua lavagem.",
       washType: {
-        title: "Tipos de lavagem de carros e serviços da BomDoza",
+        title: "Tipos e Serviços de Lavagem de Carros",
         descripition:
           "Na Bom Doza, cada carro é tratado com a máxima atenção. Nossa lavagem detalhada inclui a limpeza minuciosa de todas as áreas, desde a carroceria até os cantos mais difíceis de alcançar. Utilizamos produtos que preservam a pintura e promovem um brilho duradouro.",
       },
       homeCleaning: {
-        title: "Lavagem de carros no conforto da sua casa ou empresa",
+        title: "Lavagem de Veículos a Domicílio e Empresarial",
         descripition:
-          "Na Bom Doza, entendemos a importância da conveniência, e é por isso que oferecemos o serviço de lavagem de carros diretamente no local, seja na sua residência ou empresa. Com a nossa equipe especializada e equipamento móvel de última geração, proporcionamos uma solução de limpeza completa e eficiente, sem que você precise sair do lugar.",
+          "Na Bom Doza compreendemos a importância da conveniência, por isso o nosso serviço foi pensado em si que criamos todas as condições para que possa desfrutar deste serviço a onde estiveres, seja em casa ou na sua empresa.",
       },
       washingSchedule: {
-        title: "Agende a lavagem do seu carro sem sair de Casa:",
+        title: "Agende este Serviço sem Sair de Casa",
         descripition:
-          "Não permita que a falta de tempo ou a logística impeçam você de manter seu carro impecável. Agende agora a lavagem do seu carro e desfrute da praticidade de receber serviços profissionais diretamente onde você está. Na BomDoza, estamos comprometidos em oferecer soluções de limpeza eficientes e personalizadas para atender às suas necessidades.",
+          "Não permita que a falta de tempo te impeça de realizar o essencial que é manter o seu veículo um brilho. Agende agora os nossos serviços e desfrute do melhor em receber o seu veículo em bom estado no conforto da sua casa. Aqui, estamos comprometidos em oferecer a melhor solução de limpeza que atenda às suas necessidades.",
       },
 
       services: [
-        { type: "Lavagem externa da carroceria, limpeza de vidros e secagem;" },
-        { type: "Limpeza de rodas, pneus e detalhes do interior;" },
-        { type: "Limpeza com vapor para remover sujeira e manchas difíceis;" },
+        { type: "Lavagem Externa e interna, limpeza de vidros e secagem;" },
+        { type: "Limpeza de rodas, pneus e detalhes do exterior;" },
+        { type: "Limpeza profunda do compartimento do motor;" },
         {
-          type: "Limpeza profunda do compartimento do motor para remover acúmulos de sujeira e graxa;",
+          type: "Limpeza dos Tapetes, bancos e forros;",
         },
         {
-          type: "Limpeza para tapetes, bancos, forros e  remoção manchas e odores;",
+          type: "Limpeza de veículos específicos ( caminhões, autocarros e muito mais);",
         },
         {
-          type: "Serviços adaptados para veículos específicos, como caminhões, vans ou veículos de luxo.",
+          type: "Configuração de GPS;",
         },
-        { type: "Bom Doza configurção de GPS" },
-        {
-          type: "Restauro de Plásticos, recupere a Beleza Original dos Seus Componentes Plásticos",
-        },
+        { type: "Restauro de Plástico." },
       ],
     },
 
@@ -720,241 +720,239 @@ export const pt = {
     },
 
     pricing: {
-    
+      pricingCars: [
+        {
+          id: "1",
+          title: "Carros Pequenos",
+          icon: "faCarSide",
+          packages: [
+            {
+              name: "Básico",
+              presencialPrice: "400",
+              domicilioPrice: "8000",
+              desc: "Pacote Básico para uma limpeza básica.",
+              services: [
+                {
+                  name: "Lavagem externa",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Aspiração interna",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+              ],
+            },
+            {
+              name: "Médio",
+              presencialPrice: "400",
+              domicilioPrice: "8000",
+              desc: "Pacote Médio para uma limpeza mais abrangente.",
+              services: [
+                {
+                  name: "Lavagem externa",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Aspiração interna",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Enceramento",
+                  activePresencial: true,
+                  activeDomicilio: false,
+                },
+              ],
+            },
+            {
+              name: "Avançado",
+              presencialPrice: "400",
+              domicilioPrice: "8000",
+              desc: "Pacote Avançado para uma limpeza completa e avançada.",
+              services: [
+                {
+                  name: "Lavagem externa",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Aspiração interna",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Enceramento",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Polimento",
+                  activePresencial: true,
+                  activeDomicilio: false,
+                },
+              ],
+            },
+          ],
+        },
 
-    pricingCars:[
-    {
-      id: "1",
-      title: "Carros Pequenos",
-      icon: "faCarSide",
-      packages: [
         {
-          name: "Básico",
-          presencialPrice: "400",
-          domicilioPrice: "8000",
-          desc: "Pacote Básico para uma limpeza básica.",
-          services: [
+          id: "2",
+          title: "Carros Médios",
+          icon: "faVanShuttle",
+          packages: [
             {
-              name: "Lavagem externa",
-              activePresencial: true,
-              activeDomicilio: true,
+              name: "Básico",
+              presencialPrice: "600",
+              domicilioPrice: "1500",
+              desc: "Pacote Básico para uma limpeza básica.",
+              services: [
+                {
+                  name: "Lavagem externa",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Aspiração interna",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+              ],
             },
             {
-              name: "Aspiração interna",
-              activePresencial: true,
-              activeDomicilio: true,
+              name: "Médio",
+              presencialPrice: "600",
+              domicilioPrice: "1500",
+              desc: "Pacote Médio para uma limpeza mais abrangente.",
+              services: [
+                {
+                  name: "Lavagem externa",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Aspiração interna",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Enceramento",
+                  activePresencial: true,
+                  activeDomicilio: false,
+                },
+              ],
+            },
+            {
+              name: "Avançado",
+              presencialPrice: "600",
+              domicilioPrice: "1500",
+              desc: "Pacote Avançado para uma limpeza completa e avançada.",
+              services: [
+                {
+                  name: "Lavagem externa",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Aspiração interna",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Enceramento",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Polimento",
+                  activePresencial: true,
+                  activeDomicilio: false,
+                },
+              ],
             },
           ],
         },
         {
-          name: "Médio",
-          presencialPrice: "400",
-          domicilioPrice: "8000",
-          desc: "Pacote Médio para uma limpeza mais abrangente.",
-          services: [
+          id: "3",
+          title: "Carros Grandes",
+          icon: "faTruck",
+          packages: [
             {
-              name: "Lavagem externa",
-              activePresencial: true,
-              activeDomicilio: true,
+              name: "Básico",
+              presencialPrice: "800",
+              domicilioPrice: "2000",
+              desc: "Pacote Básico para uma limpeza básica.",
+              services: [
+                {
+                  name: "Lavagem externa",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Aspiração interna",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+              ],
             },
             {
-              name: "Aspiração interna",
-              activePresencial: true,
-              activeDomicilio: true,
+              name: "Médio",
+              presencialPrice: "800",
+              domicilioPrice: "2000",
+              desc: "Pacote Médio para uma limpeza mais abrangente.",
+              services: [
+                {
+                  name: "Lavagem externa",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Aspiração interna",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Enceramento",
+                  activePresencial: true,
+                  activeDomicilio: false,
+                },
+              ],
             },
             {
-              name: "Enceramento",
-              activePresencial: true,
-              activeDomicilio: false,
-            },
-          ],
-        },
-        {
-          name: "Avançado",
-          presencialPrice: "400",
-          domicilioPrice: "8000",
-          desc: "Pacote Avançado para uma limpeza completa e avançada.",
-          services: [
-            {
-              name: "Lavagem externa",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Aspiração interna",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Enceramento",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Polimento",
-              activePresencial: true,
-              activeDomicilio: false,
+              name: "Avançado",
+              presencialPrice: "800",
+              domicilioPrice: "2000",
+              desc: "Pacote Avançado para uma limpeza completa e avançada.",
+              services: [
+                {
+                  name: "Lavagem externa",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Aspiração interna",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Enceramento",
+                  activePresencial: true,
+                  activeDomicilio: true,
+                },
+                {
+                  name: "Polimento",
+                  activePresencial: true,
+                  activeDomicilio: false,
+                },
+              ],
             },
           ],
         },
       ],
-    },
 
-    {
-      id: "2",
-      title: "Carros Médios",
-      icon: "faVanShuttle",
-      packages: [
-        {
-          name: "Básico",
-          presencialPrice: "600",
-          domicilioPrice: "1500",
-          desc: "Pacote Básico para uma limpeza básica.",
-          services: [
-            {
-              name: "Lavagem externa",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Aspiração interna",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-          ],
-        },
-        {
-          name: "Médio",
-          presencialPrice: "600",
-          domicilioPrice: "1500",
-          desc: "Pacote Médio para uma limpeza mais abrangente.",
-          services: [
-            {
-              name: "Lavagem externa",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Aspiração interna",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Enceramento",
-              activePresencial: true,
-              activeDomicilio: false,
-            },
-          ],
-        },
-        {
-          name: "Avançado",
-          presencialPrice: "600",
-          domicilioPrice: "1500",
-          desc: "Pacote Avançado para uma limpeza completa e avançada.",
-          services: [
-            {
-              name: "Lavagem externa",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Aspiração interna",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Enceramento",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Polimento",
-              activePresencial: true,
-              activeDomicilio: false,
-            },
-          ],
-        },
-      ],
-    },
-    {
-      id: "3",
-      title: "Carros Grandes",
-      icon: "faTruck",
-      packages: [
-        {
-          name: "Básico",
-          presencialPrice: "800",
-          domicilioPrice: "2000",
-          desc: "Pacote Básico para uma limpeza básica.",
-          services: [
-            {
-              name: "Lavagem externa",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Aspiração interna",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-          ],
-        },
-        {
-          name: "Médio",
-          presencialPrice: "800",
-          domicilioPrice: "2000",
-          desc: "Pacote Médio para uma limpeza mais abrangente.",
-          services: [
-            {
-              name: "Lavagem externa",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Aspiração interna",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Enceramento",
-              activePresencial: true,
-              activeDomicilio: false,
-            },
-          ],
-        },
-        {
-          name: "Avançado",
-          presencialPrice: "800",
-          domicilioPrice: "2000",
-          desc: "Pacote Avançado para uma limpeza completa e avançada.",
-          services: [
-            {
-              name: "Lavagem externa",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Aspiração interna",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Enceramento",
-              activePresencial: true,
-              activeDomicilio: true,
-            },
-            {
-              name: "Polimento",
-              activePresencial: true,
-              activeDomicilio: false,
-            },
-          ],
-          },
-        ],
-      },
-    ],
-
-    pricingFurniture: [
+      pricingFurniture: [
         {
           id: "1",
           title: "Lavagem de Sofá",
@@ -1108,10 +1106,9 @@ export const pt = {
             },
           ],
         },
-      
       ],
-    
-    pricingTank: [
+
+      pricingTank: [
         {
           id: "1",
           title: "Taques Pequenos",
@@ -1342,11 +1339,8 @@ export const pt = {
           ],
         },
       ],
-      
     },
-
-      
   },
 
-    "Welcome {{name}}": "Bem Vindo {{name}}",
-  };
+  "Welcome {{name}}": "Bem Vindo {{name}}",
+};

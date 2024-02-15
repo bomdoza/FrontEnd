@@ -8,26 +8,18 @@ import Service from "@/components/Service";
 import Brands from "@/components/Brands";
 import Faq from "@/components/Faq";
 
-import { getDictionaryServerOnly } from "@/dictionaries/dictionary-server-only";
-
 export default  function Home({ params: { lang} }) {
-
-  const {dictionary, interpolation}= getDictionaryServerOnly(lang);
-  //console.log(dictionary);
   
   return (
     <>
       <HomeSlider lang={lang} />
       <ScrollUp />
-      {/*<div className="p-20">
-        {interpolation(dictionary[`Welcome {{name}}`], { name: `jailson` })}
-        </div>*/}
       <AboutSectionThree lang={lang} />
       <Service lang={lang} />
       <Brands />
       <Testimonials lang={lang} />
       <Faq lang={lang} />
-      <Gallery />
+      <Gallery lang={lang} />
       <Blog lang={lang} />
     </>
   );

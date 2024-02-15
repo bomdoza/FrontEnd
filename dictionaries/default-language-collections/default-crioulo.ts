@@ -3,30 +3,30 @@ export const crioulo = {
     menuData: [
       {
         id: 1,
-        title: "Comeso",
+        title: "Menu",
         path: "/",
         newTab: false,
       },
       {
         id: 2,
-        title: "Servisu",
+        title: "Sirvisu",
         newTab: false,
         submenu: [
           {
             id: 41,
-            title: "Lavajem di Karus",
+            title: "Lavajem di Carus",
             path: "/service/Car-Wash",
             newTab: false,
           },
           {
             id: 42,
-            title: "Lavajem di Mobilhas",
+            title: "Lavajem di Mobílias",
             path: "/service/Furniture-Washing",
             newTab: false,
           },
           {
             id: 43,
-            title: "Lavajem di Tankis",
+            title: " Lavajem di Tanquis",
             path: "/service/Tank-Washing",
             newTab: false,
           },
@@ -34,19 +34,19 @@ export const crioulo = {
       },
       {
         id: 3,
-        title: "Sobri-nôs",
+        title: "ken ê Nôs",
         path: "/about",
         newTab: false,
       },
       {
         id: 4,
-        title: "Nótisia",
+        title: "Blog",
         path: "/blog",
         newTab: false,
       },
       {
         id: 5,
-        title: "Kontaktu",
+        title: " Kontactu",
         path: "/contact",
         newTab: false,
       },
@@ -54,67 +54,66 @@ export const crioulo = {
   },
 
   labelButtonMenu: {
-    labelButton: "Kontatá",
+    labelButton: "Kontactanu",
   },
 
   footer: {
     descripition:
-      "Transformando o comum em impecável, cuidando de carros, sofás, tapetes e mais com excelência!",
-    linkTitle1: "Links Úteis",
-    linkTitle2: "Política de Privacidade",
-    linkTitle3: "Redes Sociais",
+      "Ta transforma komum na impekável ku limpeza kuidadosu e di ixsilênsia!",
+    linkTitle1: "Link Útil",
+    linkTitle2: "Política di Privacidadi",
+    linkTitle3: "Redi Sucial",
     linksData: [
-      { href: "/about", text: "Sobre Nós" },
+      { href: "/about", text: "Sobre Nôs" },
       { href: "/blog", text: "Blog" },
-      { href: "/contact", text: "Contacte-nos" },
+      { href: "/contact", text: "Contactanu" },
     ],
     privacyLinksData: [
-      { href: "code-conduct", text: "Código de Conduta" },
-      { href: "/terms-services", text: "Termos de Serviços" },
-      { href: "/terms-use", text: "Termo de Uso" },
+      { href: "code-conduct", text: "Kódigu di konduta" },
+      { href: "/terms-services", text: "Termus di Sirvisu" },
+      { href: "/terms-use", text: "Termus di Uso" },
     ],
     "Copyright{{year}}":
       "Copyright ©{{year}}  todos os direitos reservados a Bom Doza",
   },
 
   home: {
-    heroTitle: "Bu midjor servisu di lavajem",
-    heroDesc: "Lavajem profissional kompleto",
+    heroTitle: "Bu Midjor sirvisu di lavajem",
+    heroDesc: "Lavajem Profissional Completo",
     heroSubDesc:
-      "Nós eh um empresa especializado pa proporcioná servisu di lavajem di bus cusas di alta kualidadi i efisiénsia",
-    heroLabelButton: "Kontatá-nôs",
+      "Nôs ê um empreza di lavajem profisional di altu qualidadi e efisencia.",
+    heroLabelButton: "Contactanu",
 
     aboutSectionThree: {
-      title: "É hora de limpar seus pertences",
+      title: "É Hora di Limpa bus Pertencis",
       description:
-        "É hora de elevar o padrão de limpeza dos seus pertences! Na Bom Doza, dedicamos nossa expertise em transformar o comum em impecável. Seja o seu carro, sofá, tapete ou qualquer outro item, nossa equipe especializada está pronta para proporcionar uma limpeza excepcional.",
+        "Na Bom Doza nu ta dedika de forma exclusivo pa leba ti bo tudo nôs entendimentu na lavajem ku nôs equipa altamenti qualifikadu na atendi tudu bus nicissáriu. Nu ta ofereci lavajem geral pa bu caru, sufá, tapeti e tudu kes otus objetu nicissáriu. Tudu keli num limpeza kuidadosu e sem dexa di ser notável. Nôs equipa sta li sempri prontu pa atendi bu pedidu e nu ta garanti:",
       list: [
-        { text: "Somos um serviço profissional de lavagem" },
-        { text: "Usamos os melhores materiais de lavagem" },
-        { text: "Preocupamo-nos com a satisfação dos nossos clientes" },
+        { text: "Midjor teknica di lavajem;" },
+        { text: "Produtus e Material Adiquadu;" },
+        { text: "Satisfason di Klientis." },
       ],
     },
 
     service: {
       title: "Nossos serviços",
-      description:
-        "Na Bom Doza, oferecemos uma gama abrangente de serviços especializados",
+      description: "Na Bom Doza nu ta ofereci um variedadi di sirvisu",
       ServiceItem: [
         {
           id: 1,
-          name: "Lavagem de Carros",
+          name: "Lavajem di Caru",
           href: "/service/Car-Wash",
           image: "/images/service/Automotive.png",
         },
         {
           id: 2,
-          name: "Lavagem de Mobília",
+          name: " Lavajem di Mobília",
           href: "/service/Furniture-Washing",
           image: "/images/service/sofa.png",
         },
         {
           id: 3,
-          name: "Lavagem de Tanques",
+          name: " Lavajem di Tanqui",
           href: "/service/Tank-Washing",
           image: "/images/service/tank.png",
         },
@@ -124,32 +123,32 @@ export const crioulo = {
     testimonial: {
       title: "O que os nossos clientes dizem",
       descripition:
-        "A satisfação dos nossos clientes é o melhor testemunho da nossa dedicação à excelência",
+        "Satisfason di nos klientis ê testemunhu di nôs dedicason e excelência",
       testimonialPeople: [
         {
           id: 1,
           name: "Miguel",
           designation: "Taxista",
           content:
-            "A Bom Doza superou minhas expectativas na limpeza do meu carro. A atenção aos detalhes e a qualidade dos produtos deixaram meu carro impecável. Recomendo!",
+            "Bom Doza supera tudu nha espectativa na limpeza di nha caru. Es tive atenson na detalhi e qualidadi di sês produtu dexa nha caru um brilho. Ta rekumenda!",
           image: "/images/user/userDefault.png",
           star: 5,
         },
         {
           id: 2,
           name: "Beatriz",
-          designation: "Dona de casa",
+          designation: "Dona di Kasa",
           content:
-            "A Bom Doza fez um trabalho incrível na limpeza dos meus tapetes. A equipe foi eficiente cuidaDoza e trouxe uma nova vida aos meus tapetes. Estou muito satisfeito!",
+            "Bom Doza fazi um bom trabadju na limpa nha tapeti. Es foi eficienti, cuidadosus e es trazi um novu up na nha tapeti. Sta txeu satisfeita!",
           image: "/images/user/userDefault.png",
           star: 5,
         },
         {
           id: 3,
           name: "Matheus",
-          designation: "Empresário",
+          designation: "Imprezario",
           content:
-            "A Bom Doza foi a escolha certa para a limpeza dos tanques na minha empresa. Demonstraram conhecimento especializado, segurança e eficiência. Recomendo!",
+            "Bom Doza foi midjor iscolha pa limpeza di tanqui na nha impreza. Es dimostra mês tem conhicimentu especializadu, eficiencia e segurança. Ta rikumenda!",
           image: "/images/user/userDefault.png",
           star: 5,
         },
@@ -158,7 +157,7 @@ export const crioulo = {
 
     faq: {
       title: "Perguntas frequentes",
-      descripition: "Tire as suas dúvidas sobre os servços Bom Doza",
+      descripition: "Tra bu dúvida sobri kuze ki ês ata fla sobri nôs:",
       FaqItem: [
         {
           id: 1,
@@ -201,10 +200,13 @@ export const crioulo = {
         },
       ],
     },
+    galery: {
+      title: "Nôs Imaji",
+    },
   },
 
   blog: {
-    titleHome: "Nossas últimas notícias",
+    titleHome: "Últimu Nutícia",
     descripitionHome: "Transformando o ordinário em impecável com a Bom Dosa",
     title: "Blog",
     descripition:
@@ -440,6 +442,7 @@ export const crioulo = {
         "Contamos com uma equipe altamente qualificada e dedicada, apaixonada por oferecer soluções personalizadas para atender às necessidades específicas de cada cliente. Nossa equipe é treinada nas técnicas mais recentes de limpeza e está comprometida em garantir que cada item receba o tratamento que merece.",
     },
   },
+
   codeConduct: {
     title: "Código de Conduta",
     descripition:
@@ -573,14 +576,14 @@ export const crioulo = {
 
   service: {
     sideBar: [
-      { title: "Lavagem de Carros", icon: "faCar", url: "/service/Car-Wash" },
+      { title: "Lavajem di Carus", icon: "faCar", url: "/service/Car-Wash" },
       {
-        title: "Lavagem de Mobílias",
+        title: "Lavajem di Mobílias",
         icon: "faChair",
         url: "/service/Furniture-Washing",
       },
       {
-        title: "Lavagem de Tanques",
+        title: "Lavajem di Tanquis",
         icon: "faWater",
         url: "/service/Tank-Washing",
       },

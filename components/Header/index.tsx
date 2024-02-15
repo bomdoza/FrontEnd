@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState, useRef } from "react";
 import ThemeToggler from "./ThemeToggler";
 //import menuData from "./menuData";
-import { Lang } from "./Lang";
+//import { Lang } from "./Lang";
 import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
 const Header = ({lang}) => {
@@ -212,7 +212,7 @@ useEffect(() => {
                 >
                   {dictionary.labelButtonMenu.labelButton}
                 </Link>
-                <Lang />
+                {/*<Lang />*/}
                 <div>
                   <ThemeToggler />
                 </div>
