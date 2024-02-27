@@ -34,8 +34,8 @@ const brandsData: Brand[] = [
     href: "https://www.thebestof.cv/",
     image: "/images/logosPartners/LogoTheBestBlack.png",
     imageLight: "/images/logosPartners/LogoTheBestBlack.png",
-    width: 50,
-    height: 30,
+    width: 55,
+    height: 35,
   },
 ];
 

@@ -6,4 +6,5 @@ export type Brand = {
   imageLight?: string;
   width: number;
   height: number;
+  
 };
