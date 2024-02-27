@@ -25,8 +25,8 @@ const brandsData: Brand[] = [
     href: "https://www.tisolsai.cv/",
     image: "/images/logosPartners/tiSOLsaiBlack.png",
     imageLight: "/images/logosPartners/tiSOLsaiBlack.png",
-    width: 150,
-    height: 150,
+    width: 175,
+    height: 155,
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const brandsData: Brand[] = [
     href: "https://www.thebestof.cv/",
     image: "/images/logosPartners/LogoTheBestBlack.png",
     imageLight: "/images/logosPartners/LogoTheBestBlack.png",
-    width: 55,
+    width: 65,
     height: 35,
   },
 ];
